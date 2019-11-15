@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.cdt.ui.text.hover.CMacroExpansionExploration.internal">
+		<item value="180" key="size.height"/>
+		<item value="808" key="size.width"/>
+	</section>
+	<section name="org.eclipse.cdt.ui.text.hover.CMacroExpansionExploration">
+	</section>
+	<section name="PDOMSearchPage">
+		<item value="false" key="caseSensitive"/>
+		<item value="227191" key="searchFlags"/>
+		<list key="previousPatterns">
+			<item value="LED_PIO"/>
+			<item value="capture"/>
+			<item value="STIMULUS_IN_EDGE_TYPE"/>
+			<item value="edge"/>
+			<item value="ISR"/>
+			<item value="__delay_cycles"/>
+			<item value="ENABLE"/>
+			<item value="EGM_RESPONSE"/>
+			<item value="IOWR"/>
+		</list>
+	</section>
+	<section name="completion_proposal_size">
+	</section>
+</section>

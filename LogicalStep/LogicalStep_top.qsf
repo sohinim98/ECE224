@@ -19,7 +19,7 @@
 #
 # Quartus Prime
 # Version 15.1.0 Build 185 10/21/2015 SJ Standard Edition
-# Date created = 14:11:59  September 11, 2019
+# Date created = 13:56:55  September 12, 2019
 #
 # -------------------------------------------------------------------------- #
 #
@@ -46,9 +46,6 @@ set_global_assignment -name LAST_QUARTUS_VERSION 15.1.0
 set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
 set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
-set_global_assignment -name DEVICE_FILTER_PACKAGE "ANY QFP"
-set_global_assignment -name DEVICE_FILTER_PIN_COUNT 144
-set_global_assignment -name DEVICE_FILTER_SPEED_GRADE 8
 set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 256
 set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (VHDL)"
 set_global_assignment -name EDA_OUTPUT_DATA_FORMAT VHDL -section_id eda_simulation
@@ -77,7 +74,7 @@ set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
 set_global_assignment -name FLOW_ENABLE_POWER_ANALYZER ON
-set_global_assignment -name POWER_DEFAULT_INPUT_IO_TOGGLE_RATE 12.5%
+set_global_assignment -name POWER_DEFAULT_INPUT_IO_TOGGLE_RATE "12.5 %"
 set_global_assignment -name TIMEQUEST_MULTICORNER_ANALYSIS OFF
 set_global_assignment -name EXTERNAL_FLASH_FALLBACK_ADDRESS 00000000
 set_global_assignment -name INTERNAL_FLASH_UPDATE_MODE "SINGLE COMP IMAGE"
@@ -280,6 +277,10 @@ set_location_assignment PIN_15 -to aud_scl
 set_instance_assignment -name AUTO_OPEN_DRAIN_PINS ON -to seg7_data[1]
 set_instance_assignment -name AUTO_OPEN_DRAIN_PINS ON -to seg7_data[5]
 set_instance_assignment -name AUTO_OPEN_DRAIN_PINS ON -to seg7_data[6]
+set_global_assignment -name SIGNALTAP_FILE Lab1.stp
+set_global_assignment -name VERILOG_FILE LogicalStep_top.v
+set_global_assignment -name TCL_SCRIPT_FILE LogicalStep.tcl
+set_global_assignment -name QIP_FILE QD1/synthesis/QD1.qip
 set_global_assignment -name ENABLE_SIGNALTAP ON
 set_global_assignment -name USE_SIGNALTAP_FILE Lab1.stp
 set_global_assignment -name SLD_NODE_CREATOR_ID 110 -section_id Lab1
@@ -359,10 +360,6 @@ set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_TRIGGER_IN_ENABLE
 set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_ADVANCED_TRIGGER_ENTITY=basic,1,basic,1," -section_id Lab1
 set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_TRIGGER_LEVEL_PIPELINE=1" -section_id Lab1
 set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_ENABLE_ADVANCED_TRIGGER=0" -section_id Lab1
-set_global_assignment -name SIGNALTAP_FILE Lab1.stp
-set_global_assignment -name VERILOG_FILE LogicalStep_top.v
-set_global_assignment -name TCL_SCRIPT_FILE LogicalStep.tcl
-set_global_assignment -name QIP_FILE QD1/synthesis/QD1.qip
-set_global_assignment -name CDF_FILE output_files/Chain1.cdf
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name CDF_FILE output_files/Chain1.cdf
 set_global_assignment -name SLD_FILE db/Lab1_auto_stripped.stp

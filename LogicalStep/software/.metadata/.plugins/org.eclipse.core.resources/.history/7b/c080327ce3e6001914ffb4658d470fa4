@@ -1,0 +1,105 @@
+/*
+ * "Hello World" example.
+ *
+ * This example prints 'Hello from Nios II' to the STDOUT stream. It runs on
+ * the Nios II 'standard', 'full_featured', 'fast', and 'low_cost' example
+ * designs. It runs with or without the MicroC/OS-II RTOS and requires a STDOUT
+ * device in your system's hardware.
+ * The memory footprint of this hosted application is ~69 kbytes by default
+ * using the standard reference design.
+ *
+ * For a reduced footprint version of this template, and an explanation of how
+ * to reduce the memory footprint for a given application, see the
+ * "small_hello_world" template.
+ *
+ */
+
+#include <stdio.h>
+#include "system.h"
+#include "altera_avalon_pio_regs.h"
+
+int background();
+void tight_polling();
+void interrupt();
+
+int main()
+{
+	(IORD(SWITCH_PIO_BASE, 0) & 0x01) ? tight_polling() : tight_polling();
+	return 0;
+}
+
+void tight_polling() {
+	int j;
+	for (j = 2; j <= 5000; j += 2) {
+		IOWR(EGM_BASE,0,0);
+			IOWR(EGM_BASE,2,j);
+			IOWR(EGM_BASE, 3, j/2);
+			IOWR(EGM_BASE,0,1);
+			IOWR(RESPONSE_OUT_BASE,0,0);
+			IOWR(LED_PIO_BASE,0,0x00);
+			int stimulus = 0;
+			int falling_edge = 1;
+			int rising_edge = 0;
+			int first = 1, is_rising = 0;
+			int counter = 0;
+			while(IORD(EGM_BASE, 1)){
+				stimulus = IORD(STIMULUS_IN_BASE,0);
+				if (rising_edge && stimulus == 0) {
+					falling_edge = 1;
+					rising_edge = 0;
+				}
+				// rising edge
+				if (falling_edge && (stimulus == 1)) {
+					IOWR(RESPONSE_OUT_BASE,0,1);
+					IOWR(RESPONSE_OUT_BASE,0,0);
+					rising_edge = 1;
+					falling_edge = 0;
+					first --;
+					is_rising = 1;
+				}
+				//
+				if (first == 0) {
+					if (rising_edge && stimulus == 0) {
+						falling_edge = 1;
+						rising_edge = 0;
+						IOWR(LED_PIO_BASE,0,0x01);
+						IOWR(LED_PIO_BASE,0,0x00);
+						counter++;
+						background();
+					}
+					else {
+						IOWR(LED_PIO_BASE,0,0x01);
+						IOWR(LED_PIO_BASE,0,0x00);
+						counter++;
+						background();
+					}
+				}
+				else if (rising_edge && is_rising){
+					int i;
+					is_rising = 0;
+					for(i = 0; i < counter-1; i++){
+						IOWR(LED_PIO_BASE,0,0x01);
+						IOWR(LED_PIO_BASE,0,0x00);
+						background();
+					}
+				}
+
+
+
+			}
+	}
+}
+
+int background()
+{
+	int j;
+	int x = 0;
+	int grainsize = 4;
+	int g_taskProcessed = 0;
+
+	for(j = 0; j < grainsize; j++)
+	{
+	g_taskProcessed++;
+	}
+	return x;
+}
