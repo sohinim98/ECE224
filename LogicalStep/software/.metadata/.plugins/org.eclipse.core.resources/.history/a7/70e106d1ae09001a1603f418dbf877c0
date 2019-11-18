@@ -1,0 +1,71 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+char song_name[20][20];
+unsigned long song_size[20];
+
+int isWav(char *filename) {
+	// split at last occurrence
+	char *dot = strrchr(filename, '.');
+	if (dot != NULL) {
+		return !strncmp(".WAV", dot, 4);
+	}
+	return 0;
+
+}
+int main()
+{
+  while (*ptr == ' ')
+      ptr++;
+  res = f_opendir(&Dir, ptr);
+  if (res) // if res in non-zero there is an error; print the error.
+  {
+      put_rc(res);
+  }
+  p1 = s1 = s2 = 0; // otherwise initialize the pointers and proceed.
+  int s_index = 0;
+  for (;;)
+  {
+      res = f_readdir(&Dir, &Finfo);
+      if ((res != FR_OK) || !Finfo.fname[0])
+          break;
+      if(isWav(Finfo.fname)) {
+    	  song_size[s_index] = Finfo.fsize;
+    	  memcpy(song_name[s_index], Finfo.fname, strlen(Finfo.fname));
+    	  s_index++;
+      } else {
+    	  continue;
+      }
+      if (Finfo.fattrib & AM_DIR)
+      {
+          s2++;
+      }
+      else
+      {
+          s1++;
+          p1 += Finfo.fsize;
+      }
+//      xprintf("%c%c%c%c%c %u/%02u/%02u %02u:%02u %9lu  %s",
+//              (Finfo.fattrib & AM_DIR) ? 'D' : '-',
+//              (Finfo.fattrib & AM_RDO) ? 'R' : '-',
+//              (Finfo.fattrib & AM_HID) ? 'H' : '-',
+//              (Finfo.fattrib & AM_SYS) ? 'S' : '-',
+//              (Finfo.fattrib & AM_ARC) ? 'A' : '-',
+//              (Finfo.fdate >> 9) + 1980, (Finfo.fdate >> 5) & 15, Finfo.fdate & 31,
+//              (Finfo.ftime >> 11), (Finfo.ftime >> 5) & 63, Finfo.fsize, &(Finfo.fname[0]));
+#if _USE_LFN
+      for (p2 = strlen(Finfo.fname); p2 < 14; p2++)
+          xputc(' ');
+      xprintf("%s\n", Lfname);
+#else
+      xputc('\n');
+#endif
+  }
+  int i;
+  for (i = 0; i < s_index; i++) {
+	  printf("%s\n", song_name[i]);
+	  printf("%l\n", song_length[i]);
+  }
+  return 0;
+}

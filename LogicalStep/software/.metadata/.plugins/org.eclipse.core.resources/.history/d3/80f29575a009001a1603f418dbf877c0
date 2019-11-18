@@ -1,0 +1,59 @@
+#include <stdio.h>
+#include "alt_types.h"
+#include "altera_avalon_timer.h"
+#include "altera_avalon_timer_regs.h"
+
+unsigned char buttons;
+int firstpress;
+int leds;
+
+// ISRs
+void button_ISR(void* context, alt_u32 id){
+	//printf("in pb interrupt\n");
+	// Disable pb ISR, enable TIMER
+	// Timer ISR should be enabled by default
+	// Disable PB Interrupts
+	IOWR(BUTTON_PIO_BASE, 2, 0x0);
+
+   // Clear Timer IRQ (set status to 0- both RUN and TO)
+	// RUN == 1 when counter is running, TO == 1 when counter is 0, must be rest explicitly
+	IOWR(TIMER_0_BASE, 0x0, 0x0);
+	/** The timer is in MHz, and we want to wait for 30ms,
+	 * According to Piazza, 1 Altera clock cycle is 20 ns. Hence, to get a delay of 30 ms, we need 1,500,000 clock cycles = 0x 0016E360)	 */
+	// Set the lower 16 bits of the period
+	IOWR(TIMER_0_BASE, 0x02, 0xE360);
+   // Set the higher 16 bits of the period
+   IOWR(TIMER_0_BASE, 0x03, 0x0016);
+	// Enable Timer
+   /** offset 0x01 for control register-  third bit 1 (START) - starts the internal counter
+    * first bit 1 (ITO) - to generate interrupts when the status register's TO bit is 1 */
+   IOWR(TIMER_0_BASE, 0x01, 0x05);
+}
+
+void timer_ISR(void* context, alt_u32 id){
+	// read all 8 led values
+	int leds = IORD(BUTTON_PIO_BASE, 0x0);
+
+}
+
+
+int main()
+{
+	printf("\n\nMain\n");
+	firstpress = 1;
+
+	 // Register the ISR for timer event
+	alt_irq_register( TIMER_0_IRQ, NULL, timer_0_ISR);
+
+	//Register button interrupt
+	IOWR(BUTTON_PIO_BASE, 2, 0x0);
+	IOWR(BUTTON_PIO_BASE, 3, 0x0);
+	alt_irq_register( BUTTON_PIO_IRQ, (void *)0, button_ISR);
+	IOWR(BUTTON_PIO_BASE, 2, 0xF);
+
+
+   while(1){
+
+   }
+  return 0;
+}

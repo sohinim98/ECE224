@@ -3757,3 +3757,1319 @@ Info:                        8113 KBytes free for stack + heap.
 Info: Creating Lab2_CLI_Testing.objdump
 nios2-elf-objdump --disassemble --syms --all-header --source Lab2_CLI_Testing.elf >Lab2_CLI_Testing.objdump
 [Lab2_CLI_Testing build complete]
+18:23:26 **** Build of configuration Nios II for project Lab2_CLI_Testing ****
+make all 
+Info: Building ../Lab2_CLI_Testing_bsp/
+C:/Software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Lab2_CLI_Testing_bsp/
+[BSP build complete]
+[Lab2_CLI_Testing build complete]
+18:23:31 **** Incremental Build of configuration Nios II for project Lab2_CLI_Testing ****
+make all 
+Info: Building ../Lab2_CLI_Testing_bsp/
+C:/Software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Lab2_CLI_Testing_bsp/
+[BSP build complete]
+[Lab2_CLI_Testing build complete]
+18:29:42 **** Clean-only build of configuration Nios II for project Lab2_Pushbuttons_bsp ****
+make clean 
+[BSP clean complete]
+18:29:46 **** Clean-only build of configuration Nios II for project Lab2_Pushbuttons ****
+make clean 
+[Lab2_Pushbuttons clean complete]
+18:41:36 **** Build of configuration Nios II for project Lab2_Pushbuttons ****
+make all 
+Info: Building ../Lab2_Pushbuttons_bsp/
+C:/Software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Lab2_Pushbuttons_bsp/
+Compiling alt_alarm_start.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_alarm_start.o HAL/src/alt_alarm_start.c
+Compiling alt_busy_sleep.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_busy_sleep.o HAL/src/alt_busy_sleep.c
+Compiling alt_close.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_close.o HAL/src/alt_close.c
+Compiling alt_dcache_flush.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_dcache_flush.o HAL/src/alt_dcache_flush.c
+Compiling alt_dcache_flush_all.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_dcache_flush_all.o HAL/src/alt_dcache_flush_all.c
+Compiling alt_dcache_flush_no_writeback.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_dcache_flush_no_writeback.o HAL/src/alt_dcache_flush_no_writeback.c
+Compiling alt_dev.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_dev.o HAL/src/alt_dev.c
+Compiling alt_dev_llist_insert.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_dev_llist_insert.o HAL/src/alt_dev_llist_insert.c
+Compiling alt_dma_rxchan_open.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_dma_rxchan_open.o HAL/src/alt_dma_rxchan_open.c
+Compiling alt_dma_txchan_open.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_dma_txchan_open.o HAL/src/alt_dma_txchan_open.c
+Compiling alt_do_ctors.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_do_ctors.o HAL/src/alt_do_ctors.c
+Compiling alt_do_dtors.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_do_dtors.o HAL/src/alt_do_dtors.c
+Compiling alt_ecc_fatal_entry.S...
+nios2-elf-gcc -MP -MMD -c   -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx    -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED  -Wa,-gdwarf2  -o obj/HAL/src/alt_ecc_fatal_entry.o HAL/src/alt_ecc_fatal_entry.S
+Compiling alt_ecc_fatal_exception.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_ecc_fatal_exception.o HAL/src/alt_ecc_fatal_exception.c
+Compiling alt_env_lock.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_env_lock.o HAL/src/alt_env_lock.c
+Compiling alt_environ.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_environ.o HAL/src/alt_environ.c
+Compiling alt_errno.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_errno.o HAL/src/alt_errno.c
+Compiling alt_exception_entry.S...
+nios2-elf-gcc -MP -MMD -c   -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx    -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED  -Wa,-gdwarf2  -o obj/HAL/src/alt_exception_entry.o HAL/src/alt_exception_entry.S
+Compiling alt_exception_muldiv.S...
+nios2-elf-gcc -MP -MMD -c   -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx    -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED  -Wa,-gdwarf2  -o obj/HAL/src/alt_exception_muldiv.o HAL/src/alt_exception_muldiv.S
+Compiling alt_exception_trap.S...
+nios2-elf-gcc -MP -MMD -c   -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx    -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED  -Wa,-gdwarf2  -o obj/HAL/src/alt_exception_trap.o HAL/src/alt_exception_trap.S
+Compiling alt_execve.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_execve.o HAL/src/alt_execve.c
+Compiling alt_exit.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_exit.o HAL/src/alt_exit.c
+Compiling alt_fcntl.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_fcntl.o HAL/src/alt_fcntl.c
+Compiling alt_fd_lock.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_fd_lock.o HAL/src/alt_fd_lock.c
+Compiling alt_fd_unlock.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_fd_unlock.o HAL/src/alt_fd_unlock.c
+Compiling alt_find_dev.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_find_dev.o HAL/src/alt_find_dev.c
+Compiling alt_find_file.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_find_file.o HAL/src/alt_find_file.c
+Compiling alt_flash_dev.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_flash_dev.o HAL/src/alt_flash_dev.c
+Compiling alt_fork.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_fork.o HAL/src/alt_fork.c
+Compiling alt_fs_reg.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_fs_reg.o HAL/src/alt_fs_reg.c
+Compiling alt_fstat.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_fstat.o HAL/src/alt_fstat.c
+Compiling alt_get_fd.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_get_fd.o HAL/src/alt_get_fd.c
+Compiling alt_getchar.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_getchar.o HAL/src/alt_getchar.c
+Compiling alt_getpid.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_getpid.o HAL/src/alt_getpid.c
+Compiling alt_gettod.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_gettod.o HAL/src/alt_gettod.c
+Compiling alt_gmon.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_gmon.o HAL/src/alt_gmon.c
+Compiling alt_icache_flush.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_icache_flush.o HAL/src/alt_icache_flush.c
+Compiling alt_icache_flush_all.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_icache_flush_all.o HAL/src/alt_icache_flush_all.c
+Compiling alt_iic.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_iic.o HAL/src/alt_iic.c
+Compiling alt_iic_isr_register.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_iic_isr_register.o HAL/src/alt_iic_isr_register.c
+Compiling alt_instruction_exception_entry.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_instruction_exception_entry.o HAL/src/alt_instruction_exception_entry.c
+Compiling alt_instruction_exception_register.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_instruction_exception_register.o HAL/src/alt_instruction_exception_register.c
+Compiling alt_io_redirect.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_io_redirect.o HAL/src/alt_io_redirect.c
+Compiling alt_ioctl.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_ioctl.o HAL/src/alt_ioctl.c
+Compiling alt_irq_entry.S...
+nios2-elf-gcc -MP -MMD -c   -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx    -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED  -Wa,-gdwarf2  -o obj/HAL/src/alt_irq_entry.o HAL/src/alt_irq_entry.S
+Compiling alt_irq_handler.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_irq_handler.o HAL/src/alt_irq_handler.c
+Compiling alt_irq_register.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_irq_register.o HAL/src/alt_irq_register.c
+Compiling alt_irq_vars.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_irq_vars.o HAL/src/alt_irq_vars.c
+Compiling alt_isatty.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_isatty.o HAL/src/alt_isatty.c
+Compiling alt_kill.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_kill.o HAL/src/alt_kill.c
+Compiling alt_link.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_link.o HAL/src/alt_link.c
+Compiling alt_load.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_load.o HAL/src/alt_load.c
+Compiling alt_log_macro.S...
+nios2-elf-gcc -MP -MMD -c   -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx    -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED  -Wa,-gdwarf2  -o obj/HAL/src/alt_log_macro.o HAL/src/alt_log_macro.S
+Compiling alt_log_printf.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_log_printf.o HAL/src/alt_log_printf.c
+Compiling alt_lseek.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_lseek.o HAL/src/alt_lseek.c
+Compiling alt_main.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_main.o HAL/src/alt_main.c
+Compiling alt_malloc_lock.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_malloc_lock.o HAL/src/alt_malloc_lock.c
+Compiling alt_mcount.S...
+nios2-elf-gcc -MP -MMD -c   -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx    -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED  -Wa,-gdwarf2  -o obj/HAL/src/alt_mcount.o HAL/src/alt_mcount.S
+Compiling alt_open.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_open.o HAL/src/alt_open.c
+Compiling alt_printf.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_printf.o HAL/src/alt_printf.c
+Compiling alt_putchar.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_putchar.o HAL/src/alt_putchar.c
+Compiling alt_putcharbuf.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_putcharbuf.o HAL/src/alt_putcharbuf.c
+Compiling alt_putstr.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_putstr.o HAL/src/alt_putstr.c
+Compiling alt_read.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_read.o HAL/src/alt_read.c
+Compiling alt_release_fd.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_release_fd.o HAL/src/alt_release_fd.c
+Compiling alt_remap_cached.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_remap_cached.o HAL/src/alt_remap_cached.c
+Compiling alt_remap_uncached.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_remap_uncached.o HAL/src/alt_remap_uncached.c
+Compiling alt_rename.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_rename.o HAL/src/alt_rename.c
+Compiling alt_sbrk.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_sbrk.o HAL/src/alt_sbrk.c
+Compiling alt_settod.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_settod.o HAL/src/alt_settod.c
+Compiling alt_software_exception.S...
+nios2-elf-gcc -MP -MMD -c   -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx    -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED  -Wa,-gdwarf2  -o obj/HAL/src/alt_software_exception.o HAL/src/alt_software_exception.S
+Compiling alt_stat.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_stat.o HAL/src/alt_stat.c
+Compiling alt_tick.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_tick.o HAL/src/alt_tick.c
+Compiling alt_times.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_times.o HAL/src/alt_times.c
+Compiling alt_uncached_free.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_uncached_free.o HAL/src/alt_uncached_free.c
+Compiling alt_uncached_malloc.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_uncached_malloc.o HAL/src/alt_uncached_malloc.c
+Compiling alt_unlink.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_unlink.o HAL/src/alt_unlink.c
+Compiling alt_usleep.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_usleep.o HAL/src/alt_usleep.c
+Compiling alt_wait.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_wait.o HAL/src/alt_wait.c
+Compiling alt_write.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_write.o HAL/src/alt_write.c
+Compiling altera_nios2_gen2_irq.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/altera_nios2_gen2_irq.o HAL/src/altera_nios2_gen2_irq.c
+Compiling crt0.S...
+nios2-elf-gcc -MP -MMD -c   -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx    -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED  -Wa,-gdwarf2  -o obj/HAL/src/crt0.o HAL/src/crt0.S
+Compiling alt_sys_init.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/alt_sys_init.o alt_sys_init.c
+Compiling altera_avalon_jtag_uart_fd.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/drivers/src/altera_avalon_jtag_uart_fd.o drivers/src/altera_avalon_jtag_uart_fd.c
+Compiling altera_avalon_jtag_uart_init.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/drivers/src/altera_avalon_jtag_uart_init.o drivers/src/altera_avalon_jtag_uart_init.c
+Compiling altera_avalon_jtag_uart_ioctl.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/drivers/src/altera_avalon_jtag_uart_ioctl.o drivers/src/altera_avalon_jtag_uart_ioctl.c
+Compiling altera_avalon_jtag_uart_read.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/drivers/src/altera_avalon_jtag_uart_read.o drivers/src/altera_avalon_jtag_uart_read.c
+Compiling altera_avalon_jtag_uart_write.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/drivers/src/altera_avalon_jtag_uart_write.o drivers/src/altera_avalon_jtag_uart_write.c
+Compiling altera_avalon_lcd_16207.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/drivers/src/altera_avalon_lcd_16207.o drivers/src/altera_avalon_lcd_16207.c
+drivers/src/altera_avalon_lcd_16207.c: In function 'lcd_handle_escape':
+drivers/src/altera_avalon_lcd_16207.c:293:5: warning: array subscript has type 'char' [-Wchar-subscripts]
+     while (isdigit(*ptr))
+     ^
+drivers/src/altera_avalon_lcd_16207.c:299:7: warning: array subscript has type 'char' [-Wchar-subscripts]
+       while (isdigit(*ptr))
+       ^
+drivers/src/altera_avalon_lcd_16207.c: In function 'altera_avalon_lcd_16207_write':
+drivers/src/altera_avalon_lcd_16207.c:380:11: warning: array subscript has type 'char' [-Wchar-subscripts]
+           (esccount > 0 && !isdigit(c) && c != ';'))
+           ^
+drivers/src/altera_avalon_lcd_16207.c:418:5: warning: array subscript has type 'char' [-Wchar-subscripts]
+     else if (isprint(c))
+     ^
+Compiling altera_avalon_lcd_16207_fd.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/drivers/src/altera_avalon_lcd_16207_fd.o drivers/src/altera_avalon_lcd_16207_fd.c
+Compiling altera_avalon_sysid_qsys.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/drivers/src/altera_avalon_sysid_qsys.o drivers/src/altera_avalon_sysid_qsys.c
+Compiling altera_avalon_timer_sc.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/drivers/src/altera_avalon_timer_sc.o drivers/src/altera_avalon_timer_sc.c
+Compiling altera_avalon_timer_ts.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/drivers/src/altera_avalon_timer_ts.o drivers/src/altera_avalon_timer_ts.c
+Compiling altera_avalon_timer_vars.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/drivers/src/altera_avalon_timer_vars.o drivers/src/altera_avalon_timer_vars.c
+Compiling altera_avalon_uart_fd.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/drivers/src/altera_avalon_uart_fd.o drivers/src/altera_avalon_uart_fd.c
+Compiling altera_avalon_uart_init.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/drivers/src/altera_avalon_uart_init.o drivers/src/altera_avalon_uart_init.c
+Compiling altera_avalon_uart_ioctl.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/drivers/src/altera_avalon_uart_ioctl.o drivers/src/altera_avalon_uart_ioctl.c
+Compiling altera_avalon_uart_read.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/drivers/src/altera_avalon_uart_read.o drivers/src/altera_avalon_uart_read.c
+Compiling altera_avalon_uart_write.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/drivers/src/altera_avalon_uart_write.o drivers/src/altera_avalon_uart_write.c
+Compiling altera_up_avalon_audio.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/drivers/src/altera_up_avalon_audio.o drivers/src/altera_up_avalon_audio.c
+Compiling altera_up_avalon_audio_and_video_config.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/drivers/src/altera_up_avalon_audio_and_video_config.o drivers/src/altera_up_avalon_audio_and_video_config.c
+Creating libhal_bsp.a...
+rm -f -f libhal_bsp.a
+nios2-elf-ar -src libhal_bsp.a obj/HAL/src/alt_alarm_start.o obj/HAL/src/alt_busy_sleep.o obj/HAL/src/alt_close.o obj/HAL/src/alt_dcache_flush.o obj/HAL/src/alt_dcache_flush_all.o obj/HAL/src/alt_dcache_flush_no_writeback.o obj/HAL/src/alt_dev.o obj/HAL/src/alt_dev_llist_insert.o obj/HAL/src/alt_dma_rxchan_open.o obj/HAL/src/alt_dma_txchan_open.o obj/HAL/src/alt_do_ctors.o obj/HAL/src/alt_do_dtors.o obj/HAL/src/alt_ecc_fatal_entry.o obj/HAL/src/alt_ecc_fatal_exception.o obj/HAL/src/alt_env_lock.o obj/HAL/src/alt_environ.o obj/HAL/src/alt_errno.o obj/HAL/src/alt_exception_entry.o obj/HAL/src/alt_exception_muldiv.o obj/HAL/src/alt_exception_trap.o obj/HAL/src/alt_execve.o obj/HAL/src/alt_exit.o obj/HAL/src/alt_fcntl.o obj/HAL/src/alt_fd_lock.o obj/HAL/src/alt_fd_unlock.o obj/HAL/src/alt_find_dev.o obj/HAL/src/alt_find_file.o obj/HAL/src/alt_flash_dev.o obj/HAL/src/alt_fork.o obj/HAL/src/alt_fs_reg.o obj/HAL/src/alt_fstat.o obj/HAL/src/alt_get_fd.o obj/HAL/src/alt_getchar.o obj/HAL/src/alt_getpid.o obj/HAL/src/alt_gettod.o obj/HAL/src/alt_gmon.o obj/HAL/src/alt_icache_flush.o obj/HAL/src/alt_icache_flush_all.o obj/HAL/src/alt_iic.o obj/HAL/src/alt_iic_isr_register.o obj/HAL/src/alt_instruction_exception_entry.o obj/HAL/src/alt_instruction_exception_register.o obj/HAL/src/alt_io_redirect.o obj/HAL/src/alt_ioctl.o obj/HAL/src/alt_irq_entry.o obj/HAL/src/alt_irq_handler.o obj/HAL/src/alt_irq_register.o obj/HAL/src/alt_irq_vars.o obj/HAL/src/alt_isatty.o obj/HAL/src/alt_kill.o obj/HAL/src/alt_link.o obj/HAL/src/alt_load.o obj/HAL/src/alt_log_macro.o obj/HAL/src/alt_log_printf.o obj/HAL/src/alt_lseek.o obj/HAL/src/alt_main.o obj/HAL/src/alt_malloc_lock.o obj/HAL/src/alt_mcount.o obj/HAL/src/alt_open.o obj/HAL/src/alt_printf.o obj/HAL/src/alt_putchar.o obj/HAL/src/alt_putcharbuf.o obj/HAL/src/alt_putstr.o obj/HAL/src/alt_read.o obj/HAL/src/alt_release_fd.o obj/HAL/src/alt_remap_cached.o obj/HAL/src/alt_remap_uncached.o obj/HAL/src/alt_rename.o obj/HAL/src/alt_sbrk.o obj/HAL/src/alt_settod.o obj/HAL/src/alt_software_exception.o obj/HAL/src/alt_stat.o obj/HAL/src/alt_tick.o obj/HAL/src/alt_times.o obj/HAL/src/alt_uncached_free.o obj/HAL/src/alt_uncached_malloc.o obj/HAL/src/alt_unlink.o obj/HAL/src/alt_usleep.o obj/HAL/src/alt_wait.o obj/HAL/src/alt_write.o obj/HAL/src/altera_nios2_gen2_irq.o obj/HAL/src/crt0.o obj/alt_sys_init.o obj/drivers/src/altera_avalon_jtag_uart_fd.o obj/drivers/src/altera_avalon_jtag_uart_init.o obj/drivers/src/altera_avalon_jtag_uart_ioctl.o obj/drivers/src/altera_avalon_jtag_uart_read.o obj/drivers/src/altera_avalon_jtag_uart_write.o obj/drivers/src/altera_avalon_lcd_16207.o obj/drivers/src/altera_avalon_lcd_16207_fd.o obj/drivers/src/altera_avalon_sysid_qsys.o obj/drivers/src/altera_avalon_timer_sc.o obj/drivers/src/altera_avalon_timer_ts.o obj/drivers/src/altera_avalon_timer_vars.o obj/drivers/src/altera_avalon_uart_fd.o obj/drivers/src/altera_avalon_uart_init.o obj/drivers/src/altera_avalon_uart_ioctl.o obj/drivers/src/altera_avalon_uart_read.o obj/drivers/src/altera_avalon_uart_write.o obj/drivers/src/altera_up_avalon_audio.o obj/drivers/src/altera_up_avalon_audio_and_video_config.o
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Lab2_Pushbuttons_bsp//HAL/inc -I../Lab2_Pushbuttons_bsp/ -I../Lab2_Pushbuttons_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/hello_world.o hello_world.c
+hello_world.c: In function 'main':
+hello_world.c:80:2: warning: implicit declaration of function 'alt_irq_register' [-Wimplicit-function-declaration]
+  alt_irq_register( TIMER_0_IRQ, NULL, timer_0_ISR);
+  ^
+Info: Linking Lab2_Pushbuttons.elf
+nios2-elf-g++  -T'../Lab2_Pushbuttons_bsp//linker.x' -msys-crt0='../Lab2_Pushbuttons_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../Lab2_Pushbuttons_bsp/   -Wl,-Map=Lab2_Pushbuttons.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o Lab2_Pushbuttons.elf obj/default/hello_world.o -lm -msys-lib=m
+nios2-elf-insert Lab2_Pushbuttons.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x1001140 --timestamp 1569875873 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name QD1 --quartus_project_dir "C:/Users/s23mukhe/ECE-224/LogicalStep" --jdi ../..//output_files/LogicalStep_top.jdi --sopcinfo C:/Users/s23mukhe/ECE-224/LogicalStep/software/Lab2_Pushbuttons_bsp/../../QD1.sopcinfo
+Info: (Lab2_Pushbuttons.elf) 36 KBytes program size (code + initialized data).
+Info:                        8147 KBytes free for stack + heap.
+Info: Creating Lab2_Pushbuttons.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source Lab2_Pushbuttons.elf >Lab2_Pushbuttons.objdump
+[Lab2_Pushbuttons build complete]
+18:41:49 **** Incremental Build of configuration Nios II for project Lab2_Pushbuttons ****
+make all 
+Info: Building ../Lab2_Pushbuttons_bsp/
+C:/Software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Lab2_Pushbuttons_bsp/
+[BSP build complete]
+[Lab2_Pushbuttons build complete]
+20:37:43 **** Build of configuration Nios II for project Lab2_Pushbuttons ****
+make all 
+Info: Building ../Lab2_Pushbuttons_bsp/
+C:/Software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Lab2_Pushbuttons_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Lab2_Pushbuttons_bsp//HAL/inc -I../Lab2_Pushbuttons_bsp/ -I../Lab2_Pushbuttons_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/hello_world.o hello_world.c
+hello_world.c: In function 'main':
+hello_world.c:51:2: warning: implicit declaration of function 'alt_irq_register' [-Wimplicit-function-declaration]
+  alt_irq_register( BUTTON_PIO_IRQ, (void *)0, button_ISR);
+  ^
+Info: Linking Lab2_Pushbuttons.elf
+nios2-elf-g++  -T'../Lab2_Pushbuttons_bsp//linker.x' -msys-crt0='../Lab2_Pushbuttons_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../Lab2_Pushbuttons_bsp/   -Wl,-Map=Lab2_Pushbuttons.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o Lab2_Pushbuttons.elf obj/default/hello_world.o -lm -msys-lib=m
+nios2-elf-insert Lab2_Pushbuttons.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x1001140 --timestamp 1569875873 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name QD1 --quartus_project_dir "C:/Users/s23mukhe/ECE-224/LogicalStep" --jdi ../..//output_files/LogicalStep_top.jdi --sopcinfo C:/Users/s23mukhe/ECE-224/LogicalStep/software/Lab2_Pushbuttons_bsp/../../QD1.sopcinfo
+Info: (Lab2_Pushbuttons.elf) 36 KBytes program size (code + initialized data).
+Info:                        8148 KBytes free for stack + heap.
+Info: Creating Lab2_Pushbuttons.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source Lab2_Pushbuttons.elf >Lab2_Pushbuttons.objdump
+[Lab2_Pushbuttons build complete]
+20:37:45 **** Incremental Build of configuration Nios II for project Lab2_Pushbuttons ****
+make all 
+Info: Building ../Lab2_Pushbuttons_bsp/
+C:/Software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Lab2_Pushbuttons_bsp/
+[BSP build complete]
+[Lab2_Pushbuttons build complete]
+20:39:08 **** Build of configuration Nios II for project Lab2_Pushbuttons ****
+make all 
+Info: Building ../Lab2_Pushbuttons_bsp/
+C:/Software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Lab2_Pushbuttons_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Lab2_Pushbuttons_bsp//HAL/inc -I../Lab2_Pushbuttons_bsp/ -I../Lab2_Pushbuttons_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/hello_world.o hello_world.c
+hello_world.c: In function 'main':
+hello_world.c:51:2: warning: implicit declaration of function 'alt_irq_register' [-Wimplicit-function-declaration]
+  alt_irq_register( BUTTON_PIO_IRQ, (void *)0, button_ISR);
+  ^
+Info: Linking Lab2_Pushbuttons.elf
+nios2-elf-g++  -T'../Lab2_Pushbuttons_bsp//linker.x' -msys-crt0='../Lab2_Pushbuttons_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../Lab2_Pushbuttons_bsp/   -Wl,-Map=Lab2_Pushbuttons.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o Lab2_Pushbuttons.elf obj/default/hello_world.o -lm -msys-lib=m
+nios2-elf-insert Lab2_Pushbuttons.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x1001140 --timestamp 1569875873 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name QD1 --quartus_project_dir "C:/Users/s23mukhe/ECE-224/LogicalStep" --jdi ../..//output_files/LogicalStep_top.jdi --sopcinfo C:/Users/s23mukhe/ECE-224/LogicalStep/software/Lab2_Pushbuttons_bsp/../../QD1.sopcinfo
+Info: (Lab2_Pushbuttons.elf) 36 KBytes program size (code + initialized data).
+Info:                        8148 KBytes free for stack + heap.
+Info: Creating Lab2_Pushbuttons.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source Lab2_Pushbuttons.elf >Lab2_Pushbuttons.objdump
+[Lab2_Pushbuttons build complete]
+20:39:10 **** Incremental Build of configuration Nios II for project Lab2_Pushbuttons ****
+make all 
+Info: Building ../Lab2_Pushbuttons_bsp/
+C:/Software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Lab2_Pushbuttons_bsp/
+[BSP build complete]
+[Lab2_Pushbuttons build complete]
+20:39:45 **** Build of configuration Nios II for project Lab2_Pushbuttons ****
+make all 
+Info: Building ../Lab2_Pushbuttons_bsp/
+C:/Software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Lab2_Pushbuttons_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Lab2_Pushbuttons_bsp//HAL/inc -I../Lab2_Pushbuttons_bsp/ -I../Lab2_Pushbuttons_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/hello_world.o hello_world.c
+hello_world.c: In function 'main':
+hello_world.c:51:2: warning: implicit declaration of function 'alt_irq_register' [-Wimplicit-function-declaration]
+  alt_irq_register( BUTTON_PIO_IRQ, (void *)0, button_ISR);
+  ^
+Info: Linking Lab2_Pushbuttons.elf
+nios2-elf-g++  -T'../Lab2_Pushbuttons_bsp//linker.x' -msys-crt0='../Lab2_Pushbuttons_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../Lab2_Pushbuttons_bsp/   -Wl,-Map=Lab2_Pushbuttons.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o Lab2_Pushbuttons.elf obj/default/hello_world.o -lm -msys-lib=m
+nios2-elf-insert Lab2_Pushbuttons.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x1001140 --timestamp 1569875873 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name QD1 --quartus_project_dir "C:/Users/s23mukhe/ECE-224/LogicalStep" --jdi ../..//output_files/LogicalStep_top.jdi --sopcinfo C:/Users/s23mukhe/ECE-224/LogicalStep/software/Lab2_Pushbuttons_bsp/../../QD1.sopcinfo
+Command canceled
+20:39:51 **** Build of configuration Nios II for project Lab2_Pushbuttons ****
+make all 
+Info: Building ../Lab2_Pushbuttons_bsp/
+C:/Software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Lab2_Pushbuttons_bsp/
+[BSP build complete]
+Info: Creating Lab2_Pushbuttons.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source Lab2_Pushbuttons.elf >Lab2_Pushbuttons.objdump
+[Lab2_Pushbuttons build complete]
+20:39:52 **** Incremental Build of configuration Nios II for project Lab2_Pushbuttons ****
+make all 
+Info: Building ../Lab2_Pushbuttons_bsp/
+C:/Software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Lab2_Pushbuttons_bsp/
+[BSP build complete]
+[Lab2_Pushbuttons build complete]
+20:53:38 **** Clean-only build of configuration Nios II for project Lab2_WavePlayer_bsp ****
+make clean 
+[BSP clean complete]
+20:53:41 **** Clean-only build of configuration Nios II for project Lab2_WavePlayer ****
+make clean 
+[Lab2_WavePlayer clean complete]
+21:18:00 **** Build of configuration Nios II for project Lab2_WavePlayer ****
+make all 
+Info: Building ../Lab2_WavePlayer_bsp/
+C:/Software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Lab2_WavePlayer_bsp/
+Compiling alt_alarm_start.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_alarm_start.o HAL/src/alt_alarm_start.c
+Compiling alt_busy_sleep.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_busy_sleep.o HAL/src/alt_busy_sleep.c
+Compiling alt_close.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_close.o HAL/src/alt_close.c
+Compiling alt_dcache_flush.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_dcache_flush.o HAL/src/alt_dcache_flush.c
+Compiling alt_dcache_flush_all.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_dcache_flush_all.o HAL/src/alt_dcache_flush_all.c
+Compiling alt_dcache_flush_no_writeback.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_dcache_flush_no_writeback.o HAL/src/alt_dcache_flush_no_writeback.c
+Compiling alt_dev.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_dev.o HAL/src/alt_dev.c
+Compiling alt_dev_llist_insert.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_dev_llist_insert.o HAL/src/alt_dev_llist_insert.c
+Compiling alt_dma_rxchan_open.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_dma_rxchan_open.o HAL/src/alt_dma_rxchan_open.c
+Compiling alt_dma_txchan_open.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_dma_txchan_open.o HAL/src/alt_dma_txchan_open.c
+Compiling alt_do_ctors.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_do_ctors.o HAL/src/alt_do_ctors.c
+Compiling alt_do_dtors.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_do_dtors.o HAL/src/alt_do_dtors.c
+Compiling alt_ecc_fatal_entry.S...
+nios2-elf-gcc -MP -MMD -c   -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx    -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL  -Wa,-gdwarf2  -o obj/HAL/src/alt_ecc_fatal_entry.o HAL/src/alt_ecc_fatal_entry.S
+Compiling alt_ecc_fatal_exception.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_ecc_fatal_exception.o HAL/src/alt_ecc_fatal_exception.c
+Compiling alt_env_lock.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_env_lock.o HAL/src/alt_env_lock.c
+Compiling alt_environ.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_environ.o HAL/src/alt_environ.c
+Compiling alt_errno.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_errno.o HAL/src/alt_errno.c
+Compiling alt_exception_entry.S...
+nios2-elf-gcc -MP -MMD -c   -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx    -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL  -Wa,-gdwarf2  -o obj/HAL/src/alt_exception_entry.o HAL/src/alt_exception_entry.S
+Compiling alt_exception_muldiv.S...
+nios2-elf-gcc -MP -MMD -c   -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx    -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL  -Wa,-gdwarf2  -o obj/HAL/src/alt_exception_muldiv.o HAL/src/alt_exception_muldiv.S
+Compiling alt_exception_trap.S...
+nios2-elf-gcc -MP -MMD -c   -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx    -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL  -Wa,-gdwarf2  -o obj/HAL/src/alt_exception_trap.o HAL/src/alt_exception_trap.S
+Compiling alt_execve.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_execve.o HAL/src/alt_execve.c
+Compiling alt_exit.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_exit.o HAL/src/alt_exit.c
+Compiling alt_fcntl.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_fcntl.o HAL/src/alt_fcntl.c
+Compiling alt_fd_lock.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_fd_lock.o HAL/src/alt_fd_lock.c
+Compiling alt_fd_unlock.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_fd_unlock.o HAL/src/alt_fd_unlock.c
+Compiling alt_find_dev.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_find_dev.o HAL/src/alt_find_dev.c
+Compiling alt_find_file.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_find_file.o HAL/src/alt_find_file.c
+Compiling alt_flash_dev.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_flash_dev.o HAL/src/alt_flash_dev.c
+Compiling alt_fork.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_fork.o HAL/src/alt_fork.c
+Compiling alt_fs_reg.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_fs_reg.o HAL/src/alt_fs_reg.c
+Compiling alt_fstat.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_fstat.o HAL/src/alt_fstat.c
+Compiling alt_get_fd.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_get_fd.o HAL/src/alt_get_fd.c
+Compiling alt_getchar.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_getchar.o HAL/src/alt_getchar.c
+Compiling alt_getpid.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_getpid.o HAL/src/alt_getpid.c
+Compiling alt_gettod.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_gettod.o HAL/src/alt_gettod.c
+Compiling alt_gmon.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_gmon.o HAL/src/alt_gmon.c
+Compiling alt_icache_flush.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_icache_flush.o HAL/src/alt_icache_flush.c
+Compiling alt_icache_flush_all.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_icache_flush_all.o HAL/src/alt_icache_flush_all.c
+Compiling alt_iic.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_iic.o HAL/src/alt_iic.c
+Compiling alt_iic_isr_register.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_iic_isr_register.o HAL/src/alt_iic_isr_register.c
+Compiling alt_instruction_exception_entry.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_instruction_exception_entry.o HAL/src/alt_instruction_exception_entry.c
+Compiling alt_instruction_exception_register.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_instruction_exception_register.o HAL/src/alt_instruction_exception_register.c
+Compiling alt_io_redirect.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_io_redirect.o HAL/src/alt_io_redirect.c
+Compiling alt_ioctl.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_ioctl.o HAL/src/alt_ioctl.c
+Compiling alt_irq_entry.S...
+nios2-elf-gcc -MP -MMD -c   -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx    -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL  -Wa,-gdwarf2  -o obj/HAL/src/alt_irq_entry.o HAL/src/alt_irq_entry.S
+Compiling alt_irq_handler.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_irq_handler.o HAL/src/alt_irq_handler.c
+Compiling alt_irq_register.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_irq_register.o HAL/src/alt_irq_register.c
+Compiling alt_irq_vars.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_irq_vars.o HAL/src/alt_irq_vars.c
+Compiling alt_isatty.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_isatty.o HAL/src/alt_isatty.c
+Compiling alt_kill.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_kill.o HAL/src/alt_kill.c
+Compiling alt_link.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_link.o HAL/src/alt_link.c
+Compiling alt_load.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_load.o HAL/src/alt_load.c
+Compiling alt_log_macro.S...
+nios2-elf-gcc -MP -MMD -c   -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx    -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL  -Wa,-gdwarf2  -o obj/HAL/src/alt_log_macro.o HAL/src/alt_log_macro.S
+Compiling alt_log_printf.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_log_printf.o HAL/src/alt_log_printf.c
+Compiling alt_lseek.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_lseek.o HAL/src/alt_lseek.c
+Compiling alt_main.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_main.o HAL/src/alt_main.c
+Compiling alt_malloc_lock.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_malloc_lock.o HAL/src/alt_malloc_lock.c
+Compiling alt_mcount.S...
+nios2-elf-gcc -MP -MMD -c   -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx    -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL  -Wa,-gdwarf2  -o obj/HAL/src/alt_mcount.o HAL/src/alt_mcount.S
+Compiling alt_open.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_open.o HAL/src/alt_open.c
+Compiling alt_printf.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_printf.o HAL/src/alt_printf.c
+Compiling alt_putchar.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_putchar.o HAL/src/alt_putchar.c
+Compiling alt_putcharbuf.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_putcharbuf.o HAL/src/alt_putcharbuf.c
+Compiling alt_putstr.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_putstr.o HAL/src/alt_putstr.c
+Compiling alt_read.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_read.o HAL/src/alt_read.c
+Compiling alt_release_fd.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_release_fd.o HAL/src/alt_release_fd.c
+Compiling alt_remap_cached.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_remap_cached.o HAL/src/alt_remap_cached.c
+Compiling alt_remap_uncached.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_remap_uncached.o HAL/src/alt_remap_uncached.c
+Compiling alt_rename.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_rename.o HAL/src/alt_rename.c
+Compiling alt_sbrk.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_sbrk.o HAL/src/alt_sbrk.c
+Compiling alt_settod.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_settod.o HAL/src/alt_settod.c
+Compiling alt_software_exception.S...
+nios2-elf-gcc -MP -MMD -c   -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx    -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL  -Wa,-gdwarf2  -o obj/HAL/src/alt_software_exception.o HAL/src/alt_software_exception.S
+Compiling alt_stat.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_stat.o HAL/src/alt_stat.c
+Compiling alt_tick.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_tick.o HAL/src/alt_tick.c
+Compiling alt_times.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_times.o HAL/src/alt_times.c
+Compiling alt_uncached_free.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_uncached_free.o HAL/src/alt_uncached_free.c
+Compiling alt_uncached_malloc.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_uncached_malloc.o HAL/src/alt_uncached_malloc.c
+Compiling alt_unlink.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_unlink.o HAL/src/alt_unlink.c
+Compiling alt_usleep.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_usleep.o HAL/src/alt_usleep.c
+Compiling alt_wait.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_wait.o HAL/src/alt_wait.c
+Compiling alt_write.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_write.o HAL/src/alt_write.c
+Compiling altera_nios2_gen2_irq.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/altera_nios2_gen2_irq.o HAL/src/altera_nios2_gen2_irq.c
+Compiling crt0.S...
+nios2-elf-gcc -MP -MMD -c   -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx    -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL  -Wa,-gdwarf2  -o obj/HAL/src/crt0.o HAL/src/crt0.S
+Compiling alt_sys_init.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/alt_sys_init.o alt_sys_init.c
+Compiling altera_avalon_jtag_uart_fd.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/drivers/src/altera_avalon_jtag_uart_fd.o drivers/src/altera_avalon_jtag_uart_fd.c
+Compiling altera_avalon_jtag_uart_init.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/drivers/src/altera_avalon_jtag_uart_init.o drivers/src/altera_avalon_jtag_uart_init.c
+Compiling altera_avalon_jtag_uart_ioctl.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/drivers/src/altera_avalon_jtag_uart_ioctl.o drivers/src/altera_avalon_jtag_uart_ioctl.c
+Compiling altera_avalon_jtag_uart_read.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/drivers/src/altera_avalon_jtag_uart_read.o drivers/src/altera_avalon_jtag_uart_read.c
+Compiling altera_avalon_jtag_uart_write.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/drivers/src/altera_avalon_jtag_uart_write.o drivers/src/altera_avalon_jtag_uart_write.c
+Compiling altera_avalon_lcd_16207.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/drivers/src/altera_avalon_lcd_16207.o drivers/src/altera_avalon_lcd_16207.c
+drivers/src/altera_avalon_lcd_16207.c: In function 'lcd_handle_escape':
+drivers/src/altera_avalon_lcd_16207.c:293:5: warning: array subscript has type 'char' [-Wchar-subscripts]
+     while (isdigit(*ptr))
+     ^
+drivers/src/altera_avalon_lcd_16207.c:299:7: warning: array subscript has type 'char' [-Wchar-subscripts]
+       while (isdigit(*ptr))
+       ^
+drivers/src/altera_avalon_lcd_16207.c: In function 'altera_avalon_lcd_16207_write':
+drivers/src/altera_avalon_lcd_16207.c:380:11: warning: array subscript has type 'char' [-Wchar-subscripts]
+           (esccount > 0 && !isdigit(c) && c != ';'))
+           ^
+drivers/src/altera_avalon_lcd_16207.c:418:5: warning: array subscript has type 'char' [-Wchar-subscripts]
+     else if (isprint(c))
+     ^
+Compiling altera_avalon_lcd_16207_fd.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/drivers/src/altera_avalon_lcd_16207_fd.o drivers/src/altera_avalon_lcd_16207_fd.c
+Compiling altera_avalon_sysid_qsys.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/drivers/src/altera_avalon_sysid_qsys.o drivers/src/altera_avalon_sysid_qsys.c
+Compiling altera_avalon_timer_sc.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/drivers/src/altera_avalon_timer_sc.o drivers/src/altera_avalon_timer_sc.c
+Compiling altera_avalon_timer_ts.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/drivers/src/altera_avalon_timer_ts.o drivers/src/altera_avalon_timer_ts.c
+Compiling altera_avalon_timer_vars.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/drivers/src/altera_avalon_timer_vars.o drivers/src/altera_avalon_timer_vars.c
+Compiling altera_avalon_uart_fd.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/drivers/src/altera_avalon_uart_fd.o drivers/src/altera_avalon_uart_fd.c
+Compiling altera_avalon_uart_init.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/drivers/src/altera_avalon_uart_init.o drivers/src/altera_avalon_uart_init.c
+Compiling altera_avalon_uart_ioctl.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/drivers/src/altera_avalon_uart_ioctl.o drivers/src/altera_avalon_uart_ioctl.c
+Compiling altera_avalon_uart_read.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/drivers/src/altera_avalon_uart_read.o drivers/src/altera_avalon_uart_read.c
+Compiling altera_avalon_uart_write.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/drivers/src/altera_avalon_uart_write.o drivers/src/altera_avalon_uart_write.c
+Compiling altera_up_avalon_audio.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/drivers/src/altera_up_avalon_audio.o drivers/src/altera_up_avalon_audio.c
+Compiling altera_up_avalon_audio_and_video_config.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/drivers/src/altera_up_avalon_audio_and_video_config.o drivers/src/altera_up_avalon_audio_and_video_config.c
+Creating libhal_bsp.a...
+rm -f -f libhal_bsp.a
+nios2-elf-ar -src libhal_bsp.a obj/HAL/src/alt_alarm_start.o obj/HAL/src/alt_busy_sleep.o obj/HAL/src/alt_close.o obj/HAL/src/alt_dcache_flush.o obj/HAL/src/alt_dcache_flush_all.o obj/HAL/src/alt_dcache_flush_no_writeback.o obj/HAL/src/alt_dev.o obj/HAL/src/alt_dev_llist_insert.o obj/HAL/src/alt_dma_rxchan_open.o obj/HAL/src/alt_dma_txchan_open.o obj/HAL/src/alt_do_ctors.o obj/HAL/src/alt_do_dtors.o obj/HAL/src/alt_ecc_fatal_entry.o obj/HAL/src/alt_ecc_fatal_exception.o obj/HAL/src/alt_env_lock.o obj/HAL/src/alt_environ.o obj/HAL/src/alt_errno.o obj/HAL/src/alt_exception_entry.o obj/HAL/src/alt_exception_muldiv.o obj/HAL/src/alt_exception_trap.o obj/HAL/src/alt_execve.o obj/HAL/src/alt_exit.o obj/HAL/src/alt_fcntl.o obj/HAL/src/alt_fd_lock.o obj/HAL/src/alt_fd_unlock.o obj/HAL/src/alt_find_dev.o obj/HAL/src/alt_find_file.o obj/HAL/src/alt_flash_dev.o obj/HAL/src/alt_fork.o obj/HAL/src/alt_fs_reg.o obj/HAL/src/alt_fstat.o obj/HAL/src/alt_get_fd.o obj/HAL/src/alt_getchar.o obj/HAL/src/alt_getpid.o obj/HAL/src/alt_gettod.o obj/HAL/src/alt_gmon.o obj/HAL/src/alt_icache_flush.o obj/HAL/src/alt_icache_flush_all.o obj/HAL/src/alt_iic.o obj/HAL/src/alt_iic_isr_register.o obj/HAL/src/alt_instruction_exception_entry.o obj/HAL/src/alt_instruction_exception_register.o obj/HAL/src/alt_io_redirect.o obj/HAL/src/alt_ioctl.o obj/HAL/src/alt_irq_entry.o obj/HAL/src/alt_irq_handler.o obj/HAL/src/alt_irq_register.o obj/HAL/src/alt_irq_vars.o obj/HAL/src/alt_isatty.o obj/HAL/src/alt_kill.o obj/HAL/src/alt_link.o obj/HAL/src/alt_load.o obj/HAL/src/alt_log_macro.o obj/HAL/src/alt_log_printf.o obj/HAL/src/alt_lseek.o obj/HAL/src/alt_main.o obj/HAL/src/alt_malloc_lock.o obj/HAL/src/alt_mcount.o obj/HAL/src/alt_open.o obj/HAL/src/alt_printf.o obj/HAL/src/alt_putchar.o obj/HAL/src/alt_putcharbuf.o obj/HAL/src/alt_putstr.o obj/HAL/src/alt_read.o obj/HAL/src/alt_release_fd.o obj/HAL/src/alt_remap_cached.o obj/HAL/src/alt_remap_uncached.o obj/HAL/src/alt_rename.o obj/HAL/src/alt_sbrk.o obj/HAL/src/alt_settod.o obj/HAL/src/alt_software_exception.o obj/HAL/src/alt_stat.o obj/HAL/src/alt_tick.o obj/HAL/src/alt_times.o obj/HAL/src/alt_uncached_free.o obj/HAL/src/alt_uncached_malloc.o obj/HAL/src/alt_unlink.o obj/HAL/src/alt_usleep.o obj/HAL/src/alt_wait.o obj/HAL/src/alt_write.o obj/HAL/src/altera_nios2_gen2_irq.o obj/HAL/src/crt0.o obj/alt_sys_init.o obj/drivers/src/altera_avalon_jtag_uart_fd.o obj/drivers/src/altera_avalon_jtag_uart_init.o obj/drivers/src/altera_avalon_jtag_uart_ioctl.o obj/drivers/src/altera_avalon_jtag_uart_read.o obj/drivers/src/altera_avalon_jtag_uart_write.o obj/drivers/src/altera_avalon_lcd_16207.o obj/drivers/src/altera_avalon_lcd_16207_fd.o obj/drivers/src/altera_avalon_sysid_qsys.o obj/drivers/src/altera_avalon_timer_sc.o obj/drivers/src/altera_avalon_timer_ts.o obj/drivers/src/altera_avalon_timer_vars.o obj/drivers/src/altera_avalon_uart_fd.o obj/drivers/src/altera_avalon_uart_init.o obj/drivers/src/altera_avalon_uart_ioctl.o obj/drivers/src/altera_avalon_uart_read.o obj/drivers/src/altera_avalon_uart_write.o obj/drivers/src/altera_up_avalon_audio.o obj/drivers/src/altera_up_avalon_audio_and_video_config.o
+[BSP build complete]
+Info: Compiling fatfs.c to obj/default/fatfs.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Lab2_WavePlayer_bsp//HAL/inc -I../Lab2_WavePlayer_bsp/ -I../Lab2_WavePlayer_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/fatfs.o fatfs.c
+Info: Compiling fatfs_diskio.c to obj/default/fatfs_diskio.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Lab2_WavePlayer_bsp//HAL/inc -I../Lab2_WavePlayer_bsp/ -I../Lab2_WavePlayer_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/fatfs_diskio.o fatfs_diskio.c
+Info: Compiling fatfs_nios2_de0_nano_spi.c to obj/default/fatfs_nios2_de0_nano_spi.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Lab2_WavePlayer_bsp//HAL/inc -I../Lab2_WavePlayer_bsp/ -I../Lab2_WavePlayer_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/fatfs_nios2_de0_nano_spi.o fatfs_nios2_de0_nano_spi.c
+Info: Compiling fatfs_nios2_de1_pio.c to obj/default/fatfs_nios2_de1_pio.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Lab2_WavePlayer_bsp//HAL/inc -I../Lab2_WavePlayer_bsp/ -I../Lab2_WavePlayer_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/fatfs_nios2_de1_pio.o fatfs_nios2_de1_pio.c
+Info: Compiling fatfs_nios2_de1_spi.c to obj/default/fatfs_nios2_de1_spi.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Lab2_WavePlayer_bsp//HAL/inc -I../Lab2_WavePlayer_bsp/ -I../Lab2_WavePlayer_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/fatfs_nios2_de1_spi.o fatfs_nios2_de1_spi.c
+Info: Compiling ff.c to obj/default/ff.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Lab2_WavePlayer_bsp//HAL/inc -I../Lab2_WavePlayer_bsp/ -I../Lab2_WavePlayer_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/ff.o ff.c
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Lab2_WavePlayer_bsp//HAL/inc -I../Lab2_WavePlayer_bsp/ -I../Lab2_WavePlayer_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/hello_world.o hello_world.c
+hello_world.c:5:1: error: unknown type name 'DIR'
+ DIR dir;
+ ^
+hello_world.c: In function 'main':
+hello_world.c:15:15: warning: initialization makes integer from pointer without a cast
+   char path = "";
+               ^
+hello_world.c:16:3: error: unknown type name 'FRESULT'
+   FRESULT res;
+   ^
+hello_world.c:17:3: warning: implicit declaration of function 'f_opendir' [-Wimplicit-function-declaration]
+   res = f_opendir(&DIR,path);
+   ^
+hello_world.c:17:20: error: 'DIR' undeclared (first use in this function)
+   res = f_opendir(&DIR,path);
+                    ^
+hello_world.c:17:20: note: each undeclared identifier is reported only once for each function it appears in
+hello_world.c:18:13: error: 'FR_OK' undeclared (first use in this function)
+   if(res == FR_OK) {
+             ^
+hello_world.c:19:4: warning: implicit declaration of function 'f_readdir' [-Wimplicit-function-declaration]
+    res = f_readdir();
+    ^
+make: *** [obj/default/hello_world.o] Error 1
+21:19:24 **** Build of configuration Nios II for project Lab2_WavePlayer ****
+make all 
+Info: Building ../Lab2_WavePlayer_bsp/
+C:/Software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Lab2_WavePlayer_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Lab2_WavePlayer_bsp//HAL/inc -I../Lab2_WavePlayer_bsp/ -I../Lab2_WavePlayer_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/hello_world.o hello_world.c
+Info: Compiling monitor.c to obj/default/monitor.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Lab2_WavePlayer_bsp//HAL/inc -I../Lab2_WavePlayer_bsp/ -I../Lab2_WavePlayer_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/monitor.o monitor.c
+Info: Compiling uart_nios2.c to obj/default/uart_nios2.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Lab2_WavePlayer_bsp//HAL/inc -I../Lab2_WavePlayer_bsp/ -I../Lab2_WavePlayer_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/uart_nios2.o uart_nios2.c
+Info: Linking Lab2_WavePlayer.elf
+nios2-elf-g++  -T'../Lab2_WavePlayer_bsp//linker.x' -msys-crt0='../Lab2_WavePlayer_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../Lab2_WavePlayer_bsp/   -Wl,-Map=Lab2_WavePlayer.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o Lab2_WavePlayer.elf obj/default/fatfs.o obj/default/fatfs_diskio.o obj/default/fatfs_nios2_de0_nano_spi.o obj/default/fatfs_nios2_de1_pio.o obj/default/fatfs_nios2_de1_spi.o obj/default/ff.o obj/default/hello_world.o obj/default/monitor.o obj/default/uart_nios2.o -lm -msys-lib=m
+nios2-elf-insert Lab2_WavePlayer.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x1001140 --timestamp 1569875873 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name QD1 --quartus_project_dir "C:/Users/s23mukhe/ECE-224/LogicalStep" --jdi ../..//output_files/LogicalStep_top.jdi --sopcinfo C:/Users/s23mukhe/ECE-224/LogicalStep/software/Lab2_WavePlayer_bsp/../../QD1.sopcinfo
+Info: (Lab2_WavePlayer.elf) 106 KBytes program size (code + initialized data).
+Info:                       8082 KBytes free for stack + heap.
+Info: Creating Lab2_WavePlayer.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source Lab2_WavePlayer.elf >Lab2_WavePlayer.objdump
+[Lab2_WavePlayer build complete]
+21:19:28 **** Incremental Build of configuration Nios II for project Lab2_WavePlayer ****
+make all 
+Info: Building ../Lab2_WavePlayer_bsp/
+C:/Software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Lab2_WavePlayer_bsp/
+[BSP build complete]
+[Lab2_WavePlayer build complete]
+21:20:31 **** Build of configuration Nios II for project Lab2_WavePlayer ****
+make all 
+Info: Building ../Lab2_WavePlayer_bsp/
+C:/Software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Lab2_WavePlayer_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Lab2_WavePlayer_bsp//HAL/inc -I../Lab2_WavePlayer_bsp/ -I../Lab2_WavePlayer_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/hello_world.o hello_world.c
+Info: Linking Lab2_WavePlayer.elf
+nios2-elf-g++  -T'../Lab2_WavePlayer_bsp//linker.x' -msys-crt0='../Lab2_WavePlayer_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../Lab2_WavePlayer_bsp/   -Wl,-Map=Lab2_WavePlayer.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o Lab2_WavePlayer.elf obj/default/fatfs.o obj/default/fatfs_diskio.o obj/default/fatfs_nios2_de0_nano_spi.o obj/default/fatfs_nios2_de1_pio.o obj/default/fatfs_nios2_de1_spi.o obj/default/ff.o obj/default/hello_world.o obj/default/monitor.o obj/default/uart_nios2.o -lm -msys-lib=m
+nios2-elf-insert Lab2_WavePlayer.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x1001140 --timestamp 1569875873 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name QD1 --quartus_project_dir "C:/Users/s23mukhe/ECE-224/LogicalStep" --jdi ../..//output_files/LogicalStep_top.jdi --sopcinfo C:/Users/s23mukhe/ECE-224/LogicalStep/software/Lab2_WavePlayer_bsp/../../QD1.sopcinfo
+Info: (Lab2_WavePlayer.elf) 106 KBytes program size (code + initialized data).
+Info:                       8082 KBytes free for stack + heap.
+Info: Creating Lab2_WavePlayer.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source Lab2_WavePlayer.elf >Lab2_WavePlayer.objdump
+[Lab2_WavePlayer build complete]
+21:20:34 **** Incremental Build of configuration Nios II for project Lab2_WavePlayer ****
+make all 
+Info: Building ../Lab2_WavePlayer_bsp/
+C:/Software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Lab2_WavePlayer_bsp/
+[BSP build complete]
+[Lab2_WavePlayer build complete]
+21:23:32 **** Build of configuration Nios II for project Lab2_WavePlayer ****
+make all 
+Info: Building ../Lab2_WavePlayer_bsp/
+C:/Software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Lab2_WavePlayer_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Lab2_WavePlayer_bsp//HAL/inc -I../Lab2_WavePlayer_bsp/ -I../Lab2_WavePlayer_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/hello_world.o hello_world.c
+hello_world.c: In function 'isWav':
+hello_world.c:6:45: error: 'fname' undeclared (first use in this function)
+  return !strncmp(".WAV", (filename + strlen(fname)-4), 4);
+                                             ^
+hello_world.c:6:45: note: each undeclared identifier is reported only once for each function it appears in
+hello_world.c:8:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [obj/default/hello_world.o] Error 1
+21:23:33 **** Incremental Build of configuration Nios II for project Lab2_WavePlayer ****
+make all 
+Info: Building ../Lab2_WavePlayer_bsp/
+C:/Software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Lab2_WavePlayer_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Lab2_WavePlayer_bsp//HAL/inc -I../Lab2_WavePlayer_bsp/ -I../Lab2_WavePlayer_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/hello_world.o hello_world.c
+hello_world.c: In function 'isWav':
+hello_world.c:6:45: error: 'fname' undeclared (first use in this function)
+  return !strncmp(".WAV", (filename + strlen(fname)-4), 4);
+                                             ^
+hello_world.c:6:45: note: each undeclared identifier is reported only once for each function it appears in
+hello_world.c:8:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [obj/default/hello_world.o] Error 1
+21:24:10 **** Build of configuration Nios II for project Lab2_WavePlayer ****
+make all 
+Info: Building ../Lab2_WavePlayer_bsp/
+C:/Software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Lab2_WavePlayer_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Lab2_WavePlayer_bsp//HAL/inc -I../Lab2_WavePlayer_bsp/ -I../Lab2_WavePlayer_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/hello_world.o hello_world.c
+Info: Linking Lab2_WavePlayer.elf
+nios2-elf-g++  -T'../Lab2_WavePlayer_bsp//linker.x' -msys-crt0='../Lab2_WavePlayer_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../Lab2_WavePlayer_bsp/   -Wl,-Map=Lab2_WavePlayer.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o Lab2_WavePlayer.elf obj/default/fatfs.o obj/default/fatfs_diskio.o obj/default/fatfs_nios2_de0_nano_spi.o obj/default/fatfs_nios2_de1_pio.o obj/default/fatfs_nios2_de1_spi.o obj/default/ff.o obj/default/hello_world.o obj/default/monitor.o obj/default/uart_nios2.o -lm -msys-lib=m
+nios2-elf-insert Lab2_WavePlayer.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x1001140 --timestamp 1569875873 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name QD1 --quartus_project_dir "C:/Users/s23mukhe/ECE-224/LogicalStep" --jdi ../..//output_files/LogicalStep_top.jdi --sopcinfo C:/Users/s23mukhe/ECE-224/LogicalStep/software/Lab2_WavePlayer_bsp/../../QD1.sopcinfo
+Info: (Lab2_WavePlayer.elf) 104 KBytes program size (code + initialized data).
+Info:                       8084 KBytes free for stack + heap.
+Info: Creating Lab2_WavePlayer.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source Lab2_WavePlayer.elf >Lab2_WavePlayer.objdump
+[Lab2_WavePlayer build complete]
+21:24:13 **** Incremental Build of configuration Nios II for project Lab2_WavePlayer ****
+make all 
+Info: Building ../Lab2_WavePlayer_bsp/
+C:/Software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Lab2_WavePlayer_bsp/
+[BSP build complete]
+[Lab2_WavePlayer build complete]
+21:24:37 **** Build of configuration Nios II for project Lab2_WavePlayer ****
+make all 
+Info: Building ../Lab2_WavePlayer_bsp/
+C:/Software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Lab2_WavePlayer_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Lab2_WavePlayer_bsp//HAL/inc -I../Lab2_WavePlayer_bsp/ -I../Lab2_WavePlayer_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/hello_world.o hello_world.c
+Info: Linking Lab2_WavePlayer.elf
+nios2-elf-g++  -T'../Lab2_WavePlayer_bsp//linker.x' -msys-crt0='../Lab2_WavePlayer_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../Lab2_WavePlayer_bsp/   -Wl,-Map=Lab2_WavePlayer.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o Lab2_WavePlayer.elf obj/default/fatfs.o obj/default/fatfs_diskio.o obj/default/fatfs_nios2_de0_nano_spi.o obj/default/fatfs_nios2_de1_pio.o obj/default/fatfs_nios2_de1_spi.o obj/default/ff.o obj/default/hello_world.o obj/default/monitor.o obj/default/uart_nios2.o -lm -msys-lib=m
+nios2-elf-insert Lab2_WavePlayer.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x1001140 --timestamp 1569875873 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name QD1 --quartus_project_dir "C:/Users/s23mukhe/ECE-224/LogicalStep" --jdi ../..//output_files/LogicalStep_top.jdi --sopcinfo C:/Users/s23mukhe/ECE-224/LogicalStep/software/Lab2_WavePlayer_bsp/../../QD1.sopcinfo
+Info: (Lab2_WavePlayer.elf) 104 KBytes program size (code + initialized data).
+Info:                       8084 KBytes free for stack + heap.
+Info: Creating Lab2_WavePlayer.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source Lab2_WavePlayer.elf >Lab2_WavePlayer.objdump
+[Lab2_WavePlayer build complete]
+21:24:40 **** Incremental Build of configuration Nios II for project Lab2_WavePlayer ****
+make all 
+Info: Building ../Lab2_WavePlayer_bsp/
+C:/Software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Lab2_WavePlayer_bsp/
+[BSP build complete]
+[Lab2_WavePlayer build complete]
+21:25:00 **** Build of configuration Nios II for project Lab2_WavePlayer ****
+make all 
+Info: Building ../Lab2_WavePlayer_bsp/
+C:/Software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Lab2_WavePlayer_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Lab2_WavePlayer_bsp//HAL/inc -I../Lab2_WavePlayer_bsp/ -I../Lab2_WavePlayer_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/hello_world.o hello_world.c
+Info: Linking Lab2_WavePlayer.elf
+nios2-elf-g++  -T'../Lab2_WavePlayer_bsp//linker.x' -msys-crt0='../Lab2_WavePlayer_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../Lab2_WavePlayer_bsp/   -Wl,-Map=Lab2_WavePlayer.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o Lab2_WavePlayer.elf obj/default/fatfs.o obj/default/fatfs_diskio.o obj/default/fatfs_nios2_de0_nano_spi.o obj/default/fatfs_nios2_de1_pio.o obj/default/fatfs_nios2_de1_spi.o obj/default/ff.o obj/default/hello_world.o obj/default/monitor.o obj/default/uart_nios2.o -lm -msys-lib=m
+nios2-elf-insert Lab2_WavePlayer.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x1001140 --timestamp 1569875873 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name QD1 --quartus_project_dir "C:/Users/s23mukhe/ECE-224/LogicalStep" --jdi ../..//output_files/LogicalStep_top.jdi --sopcinfo C:/Users/s23mukhe/ECE-224/LogicalStep/software/Lab2_WavePlayer_bsp/../../QD1.sopcinfo
+Info: (Lab2_WavePlayer.elf) 104 KBytes program size (code + initialized data).
+Info:                       8084 KBytes free for stack + heap.
+Info: Creating Lab2_WavePlayer.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source Lab2_WavePlayer.elf >Lab2_WavePlayer.objdump
+[Lab2_WavePlayer build complete]
+21:25:02 **** Incremental Build of configuration Nios II for project Lab2_WavePlayer ****
+make all 
+Info: Building ../Lab2_WavePlayer_bsp/
+C:/Software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Lab2_WavePlayer_bsp/
+[BSP build complete]
+[Lab2_WavePlayer build complete]
+21:32:59 **** Build of configuration Nios II for project Lab2_WavePlayer ****
+make all 
+Info: Building ../Lab2_WavePlayer_bsp/
+C:/Software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Lab2_WavePlayer_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Lab2_WavePlayer_bsp//HAL/inc -I../Lab2_WavePlayer_bsp/ -I../Lab2_WavePlayer_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/hello_world.o hello_world.c
+hello_world.c: In function 'isWav':
+hello_world.c:7:32: warning: passing argument 2 of 'strrchr' makes integer from pointer without a cast
+  char *dot = strrchr(filename, ".");
+                                ^
+In file included from c:\software\altera\15.1\nios2eds\bin\gnu\h-x86_64-mingw32\nios2-elf\include\stdio.h:29:0,
+                 from hello_world.c:1:
+c:\software\altera\15.1\nios2eds\bin\gnu\h-x86_64-mingw32\nios2-elf\include\string.h:38:8: note: expected 'int' but argument is of type 'char *'
+ char  *_EXFUN(strrchr,(const char *, int));
+        ^
+Info: Linking Lab2_WavePlayer.elf
+nios2-elf-g++  -T'../Lab2_WavePlayer_bsp//linker.x' -msys-crt0='../Lab2_WavePlayer_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../Lab2_WavePlayer_bsp/   -Wl,-Map=Lab2_WavePlayer.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o Lab2_WavePlayer.elf obj/default/fatfs.o obj/default/fatfs_diskio.o obj/default/fatfs_nios2_de0_nano_spi.o obj/default/fatfs_nios2_de1_pio.o obj/default/fatfs_nios2_de1_spi.o obj/default/ff.o obj/default/hello_world.o obj/default/monitor.o obj/default/uart_nios2.o -lm -msys-lib=m
+nios2-elf-insert Lab2_WavePlayer.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x1001140 --timestamp 1569875873 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name QD1 --quartus_project_dir "C:/Users/s23mukhe/ECE-224/LogicalStep" --jdi ../..//output_files/LogicalStep_top.jdi --sopcinfo C:/Users/s23mukhe/ECE-224/LogicalStep/software/Lab2_WavePlayer_bsp/../../QD1.sopcinfo
+Info: (Lab2_WavePlayer.elf) 105 KBytes program size (code + initialized data).
+Info:                       8083 KBytes free for stack + heap.
+Info: Creating Lab2_WavePlayer.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source Lab2_WavePlayer.elf >Lab2_WavePlayer.objdump
+[Lab2_WavePlayer build complete]
+21:33:02 **** Incremental Build of configuration Nios II for project Lab2_WavePlayer ****
+make all 
+Info: Building ../Lab2_WavePlayer_bsp/
+C:/Software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Lab2_WavePlayer_bsp/
+[BSP build complete]
+[Lab2_WavePlayer build complete]
+21:33:29 **** Build of configuration Nios II for project Lab2_WavePlayer ****
+make all 
+Info: Building ../Lab2_WavePlayer_bsp/
+C:/Software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Lab2_WavePlayer_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Lab2_WavePlayer_bsp//HAL/inc -I../Lab2_WavePlayer_bsp/ -I../Lab2_WavePlayer_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/hello_world.o hello_world.c
+hello_world.c: In function 'isWav':
+hello_world.c:7:32: warning: passing argument 2 of 'strrchr' makes integer from pointer without a cast
+  char *dot = strrchr(filename, ".");
+                                ^
+In file included from c:\software\altera\15.1\nios2eds\bin\gnu\h-x86_64-mingw32\nios2-elf\include\stdio.h:29:0,
+                 from hello_world.c:1:
+c:\software\altera\15.1\nios2eds\bin\gnu\h-x86_64-mingw32\nios2-elf\include\string.h:38:8: note: expected 'int' but argument is of type 'char *'
+ char  *_EXFUN(strrchr,(const char *, int));
+        ^
+Info: Linking Lab2_WavePlayer.elf
+nios2-elf-g++  -T'../Lab2_WavePlayer_bsp//linker.x' -msys-crt0='../Lab2_WavePlayer_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../Lab2_WavePlayer_bsp/   -Wl,-Map=Lab2_WavePlayer.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o Lab2_WavePlayer.elf obj/default/fatfs.o obj/default/fatfs_diskio.o obj/default/fatfs_nios2_de0_nano_spi.o obj/default/fatfs_nios2_de1_pio.o obj/default/fatfs_nios2_de1_spi.o obj/default/ff.o obj/default/hello_world.o obj/default/monitor.o obj/default/uart_nios2.o -lm -msys-lib=m
+nios2-elf-insert Lab2_WavePlayer.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x1001140 --timestamp 1569875873 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name QD1 --quartus_project_dir "C:/Users/s23mukhe/ECE-224/LogicalStep" --jdi ../..//output_files/LogicalStep_top.jdi --sopcinfo C:/Users/s23mukhe/ECE-224/LogicalStep/software/Lab2_WavePlayer_bsp/../../QD1.sopcinfo
+Info: (Lab2_WavePlayer.elf) 105 KBytes program size (code + initialized data).
+Info:                       8083 KBytes free for stack + heap.
+Info: Creating Lab2_WavePlayer.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source Lab2_WavePlayer.elf >Lab2_WavePlayer.objdump
+[Lab2_WavePlayer build complete]
+21:33:32 **** Incremental Build of configuration Nios II for project Lab2_WavePlayer ****
+make all 
+Info: Building ../Lab2_WavePlayer_bsp/
+C:/Software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Lab2_WavePlayer_bsp/
+[BSP build complete]
+[Lab2_WavePlayer build complete]
+21:34:35 **** Build of configuration Nios II for project Lab2_WavePlayer ****
+make all 
+Info: Building ../Lab2_WavePlayer_bsp/
+C:/Software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Lab2_WavePlayer_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Lab2_WavePlayer_bsp//HAL/inc -I../Lab2_WavePlayer_bsp/ -I../Lab2_WavePlayer_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/hello_world.o hello_world.c
+hello_world.c: In function 'isWav':
+hello_world.c:7:32: warning: passing argument 2 of 'strrchr' makes integer from pointer without a cast
+  char *dot = strrchr(filename, ".");
+                                ^
+In file included from c:\software\altera\15.1\nios2eds\bin\gnu\h-x86_64-mingw32\nios2-elf\include\stdio.h:29:0,
+                 from hello_world.c:1:
+c:\software\altera\15.1\nios2eds\bin\gnu\h-x86_64-mingw32\nios2-elf\include\string.h:38:8: note: expected 'int' but argument is of type 'char *'
+ char  *_EXFUN(strrchr,(const char *, int));
+        ^
+Info: Linking Lab2_WavePlayer.elf
+nios2-elf-g++  -T'../Lab2_WavePlayer_bsp//linker.x' -msys-crt0='../Lab2_WavePlayer_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../Lab2_WavePlayer_bsp/   -Wl,-Map=Lab2_WavePlayer.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o Lab2_WavePlayer.elf obj/default/fatfs.o obj/default/fatfs_diskio.o obj/default/fatfs_nios2_de0_nano_spi.o obj/default/fatfs_nios2_de1_pio.o obj/default/fatfs_nios2_de1_spi.o obj/default/ff.o obj/default/hello_world.o obj/default/monitor.o obj/default/uart_nios2.o -lm -msys-lib=m
+nios2-elf-insert Lab2_WavePlayer.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x1001140 --timestamp 1569875873 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name QD1 --quartus_project_dir "C:/Users/s23mukhe/ECE-224/LogicalStep" --jdi ../..//output_files/LogicalStep_top.jdi --sopcinfo C:/Users/s23mukhe/ECE-224/LogicalStep/software/Lab2_WavePlayer_bsp/../../QD1.sopcinfo
+Info: (Lab2_WavePlayer.elf) 105 KBytes program size (code + initialized data).
+Info:                       8083 KBytes free for stack + heap.
+Info: Creating Lab2_WavePlayer.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source Lab2_WavePlayer.elf >Lab2_WavePlayer.objdump
+[Lab2_WavePlayer build complete]
+21:34:37 **** Incremental Build of configuration Nios II for project Lab2_WavePlayer ****
+make all 
+Info: Building ../Lab2_WavePlayer_bsp/
+C:/Software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Lab2_WavePlayer_bsp/
+[BSP build complete]
+[Lab2_WavePlayer build complete]
+21:35:18 **** Build of configuration Nios II for project Lab2_WavePlayer ****
+make all 
+Info: Building ../Lab2_WavePlayer_bsp/
+C:/Software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Lab2_WavePlayer_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Lab2_WavePlayer_bsp//HAL/inc -I../Lab2_WavePlayer_bsp/ -I../Lab2_WavePlayer_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/hello_world.o hello_world.c
+hello_world.c: In function 'isWav':
+hello_world.c:7:32: warning: passing argument 2 of 'strrchr' makes integer from pointer without a cast
+  char *dot = strrchr(filename, ".");
+                                ^
+In file included from c:\software\altera\15.1\nios2eds\bin\gnu\h-x86_64-mingw32\nios2-elf\include\stdio.h:29:0,
+                 from hello_world.c:1:
+c:\software\altera\15.1\nios2eds\bin\gnu\h-x86_64-mingw32\nios2-elf\include\string.h:38:8: note: expected 'int' but argument is of type 'char *'
+ char  *_EXFUN(strrchr,(const char *, int));
+        ^
+Info: Linking Lab2_WavePlayer.elf
+nios2-elf-g++  -T'../Lab2_WavePlayer_bsp//linker.x' -msys-crt0='../Lab2_WavePlayer_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../Lab2_WavePlayer_bsp/   -Wl,-Map=Lab2_WavePlayer.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o Lab2_WavePlayer.elf obj/default/fatfs.o obj/default/fatfs_diskio.o obj/default/fatfs_nios2_de0_nano_spi.o obj/default/fatfs_nios2_de1_pio.o obj/default/fatfs_nios2_de1_spi.o obj/default/ff.o obj/default/hello_world.o obj/default/monitor.o obj/default/uart_nios2.o -lm -msys-lib=m
+nios2-elf-insert Lab2_WavePlayer.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x1001140 --timestamp 1569875873 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name QD1 --quartus_project_dir "C:/Users/s23mukhe/ECE-224/LogicalStep" --jdi ../..//output_files/LogicalStep_top.jdi --sopcinfo C:/Users/s23mukhe/ECE-224/LogicalStep/software/Lab2_WavePlayer_bsp/../../QD1.sopcinfo
+Info: (Lab2_WavePlayer.elf) 105 KBytes program size (code + initialized data).
+Info:                       8083 KBytes free for stack + heap.
+Info: Creating Lab2_WavePlayer.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source Lab2_WavePlayer.elf >Lab2_WavePlayer.objdump
+[Lab2_WavePlayer build complete]
+21:35:21 **** Incremental Build of configuration Nios II for project Lab2_WavePlayer ****
+make all 
+Info: Building ../Lab2_WavePlayer_bsp/
+C:/Software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Lab2_WavePlayer_bsp/
+[BSP build complete]
+[Lab2_WavePlayer build complete]
+21:36:11 **** Build of configuration Nios II for project Lab2_WavePlayer ****
+make all 
+Info: Building ../Lab2_WavePlayer_bsp/
+C:/Software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Lab2_WavePlayer_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Lab2_WavePlayer_bsp//HAL/inc -I../Lab2_WavePlayer_bsp/ -I../Lab2_WavePlayer_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/hello_world.o hello_world.c
+hello_world.c: In function 'isWav':
+hello_world.c:7:32: warning: passing argument 2 of 'strrchr' makes integer from pointer without a cast
+  char *dot = strrchr(filename, ".");
+                                ^
+In file included from c:\software\altera\15.1\nios2eds\bin\gnu\h-x86_64-mingw32\nios2-elf\include\stdio.h:29:0,
+                 from hello_world.c:1:
+c:\software\altera\15.1\nios2eds\bin\gnu\h-x86_64-mingw32\nios2-elf\include\string.h:38:8: note: expected 'int' but argument is of type 'char *'
+ char  *_EXFUN(strrchr,(const char *, int));
+        ^
+Info: Linking Lab2_WavePlayer.elf
+nios2-elf-g++  -T'../Lab2_WavePlayer_bsp//linker.x' -msys-crt0='../Lab2_WavePlayer_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../Lab2_WavePlayer_bsp/   -Wl,-Map=Lab2_WavePlayer.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o Lab2_WavePlayer.elf obj/default/fatfs.o obj/default/fatfs_diskio.o obj/default/fatfs_nios2_de0_nano_spi.o obj/default/fatfs_nios2_de1_pio.o obj/default/fatfs_nios2_de1_spi.o obj/default/ff.o obj/default/hello_world.o obj/default/monitor.o obj/default/uart_nios2.o -lm -msys-lib=m
+nios2-elf-insert Lab2_WavePlayer.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x1001140 --timestamp 1569875873 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name QD1 --quartus_project_dir "C:/Users/s23mukhe/ECE-224/LogicalStep" --jdi ../..//output_files/LogicalStep_top.jdi --sopcinfo C:/Users/s23mukhe/ECE-224/LogicalStep/software/Lab2_WavePlayer_bsp/../../QD1.sopcinfo
+Info: (Lab2_WavePlayer.elf) 105 KBytes program size (code + initialized data).
+Info:                       8083 KBytes free for stack + heap.
+Info: Creating Lab2_WavePlayer.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source Lab2_WavePlayer.elf >Lab2_WavePlayer.objdump
+[Lab2_WavePlayer build complete]
+21:36:14 **** Incremental Build of configuration Nios II for project Lab2_WavePlayer ****
+make all 
+Info: Building ../Lab2_WavePlayer_bsp/
+C:/Software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Lab2_WavePlayer_bsp/
+[BSP build complete]
+[Lab2_WavePlayer build complete]
+21:37:35 **** Build of configuration Nios II for project Lab2_WavePlayer ****
+make all 
+Info: Building ../Lab2_WavePlayer_bsp/
+C:/Software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Lab2_WavePlayer_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Lab2_WavePlayer_bsp//HAL/inc -I../Lab2_WavePlayer_bsp/ -I../Lab2_WavePlayer_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/hello_world.o hello_world.c
+Info: Linking Lab2_WavePlayer.elf
+nios2-elf-g++  -T'../Lab2_WavePlayer_bsp//linker.x' -msys-crt0='../Lab2_WavePlayer_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../Lab2_WavePlayer_bsp/   -Wl,-Map=Lab2_WavePlayer.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o Lab2_WavePlayer.elf obj/default/fatfs.o obj/default/fatfs_diskio.o obj/default/fatfs_nios2_de0_nano_spi.o obj/default/fatfs_nios2_de1_pio.o obj/default/fatfs_nios2_de1_spi.o obj/default/ff.o obj/default/hello_world.o obj/default/monitor.o obj/default/uart_nios2.o -lm -msys-lib=m
+nios2-elf-insert Lab2_WavePlayer.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x1001140 --timestamp 1569875873 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name QD1 --quartus_project_dir "C:/Users/s23mukhe/ECE-224/LogicalStep" --jdi ../..//output_files/LogicalStep_top.jdi --sopcinfo C:/Users/s23mukhe/ECE-224/LogicalStep/software/Lab2_WavePlayer_bsp/../../QD1.sopcinfo
+Info: (Lab2_WavePlayer.elf) 105 KBytes program size (code + initialized data).
+Info:                       8083 KBytes free for stack + heap.
+Info: Creating Lab2_WavePlayer.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source Lab2_WavePlayer.elf >Lab2_WavePlayer.objdump
+[Lab2_WavePlayer build complete]
+21:37:38 **** Incremental Build of configuration Nios II for project Lab2_WavePlayer ****
+make all 
+Info: Building ../Lab2_WavePlayer_bsp/
+C:/Software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Lab2_WavePlayer_bsp/
+[BSP build complete]
+[Lab2_WavePlayer build complete]
+21:38:12 **** Build of configuration Nios II for project Lab2_WavePlayer ****
+make all 
+Info: Building ../Lab2_WavePlayer_bsp/
+C:/Software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Lab2_WavePlayer_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Lab2_WavePlayer_bsp//HAL/inc -I../Lab2_WavePlayer_bsp/ -I../Lab2_WavePlayer_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/hello_world.o hello_world.c
+Info: Linking Lab2_WavePlayer.elf
+nios2-elf-g++  -T'../Lab2_WavePlayer_bsp//linker.x' -msys-crt0='../Lab2_WavePlayer_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../Lab2_WavePlayer_bsp/   -Wl,-Map=Lab2_WavePlayer.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o Lab2_WavePlayer.elf obj/default/fatfs.o obj/default/fatfs_diskio.o obj/default/fatfs_nios2_de0_nano_spi.o obj/default/fatfs_nios2_de1_pio.o obj/default/fatfs_nios2_de1_spi.o obj/default/ff.o obj/default/hello_world.o obj/default/monitor.o obj/default/uart_nios2.o -lm -msys-lib=m
+nios2-elf-insert Lab2_WavePlayer.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x1001140 --timestamp 1569875873 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name QD1 --quartus_project_dir "C:/Users/s23mukhe/ECE-224/LogicalStep" --jdi ../..//output_files/LogicalStep_top.jdi --sopcinfo C:/Users/s23mukhe/ECE-224/LogicalStep/software/Lab2_WavePlayer_bsp/../../QD1.sopcinfo
+Info: (Lab2_WavePlayer.elf) 105 KBytes program size (code + initialized data).
+Info:                       8083 KBytes free for stack + heap.
+Info: Creating Lab2_WavePlayer.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source Lab2_WavePlayer.elf >Lab2_WavePlayer.objdump
+[Lab2_WavePlayer build complete]
+21:38:15 **** Incremental Build of configuration Nios II for project Lab2_WavePlayer ****
+make all 
+Info: Building ../Lab2_WavePlayer_bsp/
+C:/Software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Lab2_WavePlayer_bsp/
+[BSP build complete]
+[Lab2_WavePlayer build complete]
+21:38:44 **** Build of configuration Nios II for project Lab2_WavePlayer ****
+make all 
+Info: Building ../Lab2_WavePlayer_bsp/
+C:/Software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Lab2_WavePlayer_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Lab2_WavePlayer_bsp//HAL/inc -I../Lab2_WavePlayer_bsp/ -I../Lab2_WavePlayer_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/hello_world.o hello_world.c
+Info: Linking Lab2_WavePlayer.elf
+nios2-elf-g++  -T'../Lab2_WavePlayer_bsp//linker.x' -msys-crt0='../Lab2_WavePlayer_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../Lab2_WavePlayer_bsp/   -Wl,-Map=Lab2_WavePlayer.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o Lab2_WavePlayer.elf obj/default/fatfs.o obj/default/fatfs_diskio.o obj/default/fatfs_nios2_de0_nano_spi.o obj/default/fatfs_nios2_de1_pio.o obj/default/fatfs_nios2_de1_spi.o obj/default/ff.o obj/default/hello_world.o obj/default/monitor.o obj/default/uart_nios2.o -lm -msys-lib=m
+nios2-elf-insert Lab2_WavePlayer.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x1001140 --timestamp 1569875873 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name QD1 --quartus_project_dir "C:/Users/s23mukhe/ECE-224/LogicalStep" --jdi ../..//output_files/LogicalStep_top.jdi --sopcinfo C:/Users/s23mukhe/ECE-224/LogicalStep/software/Lab2_WavePlayer_bsp/../../QD1.sopcinfo
+Info: (Lab2_WavePlayer.elf) 105 KBytes program size (code + initialized data).
+Info:                       8083 KBytes free for stack + heap.
+Info: Creating Lab2_WavePlayer.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source Lab2_WavePlayer.elf >Lab2_WavePlayer.objdump
+[Lab2_WavePlayer build complete]
+21:38:47 **** Incremental Build of configuration Nios II for project Lab2_WavePlayer ****
+make all 
+Info: Building ../Lab2_WavePlayer_bsp/
+C:/Software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Lab2_WavePlayer_bsp/
+[BSP build complete]
+[Lab2_WavePlayer build complete]
+21:54:20 **** Incremental Build of configuration Nios II for project Lab2_WavePlayer ****
+make all 
+Info: Building ../Lab2_WavePlayer_bsp/
+C:/Software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Lab2_WavePlayer_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Lab2_WavePlayer_bsp//HAL/inc -I../Lab2_WavePlayer_bsp/ -I../Lab2_WavePlayer_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/hello_world.o hello_world.c
+hello_world.c: In function 'main':
+hello_world.c:19:11: error: 'ptr' undeclared (first use in this function)
+   while (*ptr == ' ')
+           ^
+hello_world.c:19:11: note: each undeclared identifier is reported only once for each function it appears in
+hello_world.c:21:3: error: 'res' undeclared (first use in this function)
+   res = f_opendir(&Dir, ptr);
+   ^
+hello_world.c:21:3: warning: implicit declaration of function 'f_opendir' [-Wimplicit-function-declaration]
+hello_world.c:21:20: error: 'Dir' undeclared (first use in this function)
+   res = f_opendir(&Dir, ptr);
+                    ^
+hello_world.c:24:7: warning: implicit declaration of function 'put_rc' [-Wimplicit-function-declaration]
+       put_rc(res);
+       ^
+hello_world.c:26:3: error: 'p1' undeclared (first use in this function)
+   p1 = s1 = s2 = 0; // otherwise initialize the pointers and proceed.
+   ^
+hello_world.c:26:8: error: 's1' undeclared (first use in this function)
+   p1 = s1 = s2 = 0; // otherwise initialize the pointers and proceed.
+        ^
+hello_world.c:26:13: error: 's2' undeclared (first use in this function)
+   p1 = s1 = s2 = 0; // otherwise initialize the pointers and proceed.
+             ^
+hello_world.c:30:7: warning: implicit declaration of function 'f_readdir' [-Wimplicit-function-declaration]
+       res = f_readdir(&Dir, &Finfo);
+       ^
+hello_world.c:30:30: error: 'Finfo' undeclared (first use in this function)
+       res = f_readdir(&Dir, &Finfo);
+                              ^
+hello_world.c:31:19: error: 'FR_OK' undeclared (first use in this function)
+       if ((res != FR_OK) || !Finfo.fname[0])
+                   ^
+hello_world.c:40:27: error: 'AM_DIR' undeclared (first use in this function)
+       if (Finfo.fattrib & AM_DIR)
+                           ^
+hello_world.c:62:7: warning: implicit declaration of function 'xputc' [-Wimplicit-function-declaration]
+       xputc('\n');
+       ^
+hello_world.c:65:3: error: 'for' loop initial declarations are only allowed in C99 or C11 mode
+   for (int i = 0; i < s_index; i++) {
+   ^
+hello_world.c:65:3: note: use option -std=c99, -std=gnu99, -std=c11 or -std=gnu11 to compile your code
+hello_world.c:67:19: error: 'song_length' undeclared (first use in this function)
+    printf("%l\n", song_length[s_index]);
+                   ^
+make: *** [obj/default/hello_world.o] Error 1
+21:54:45 **** Incremental Build of configuration Nios II for project Lab2_WavePlayer ****
+make all 
+Info: Building ../Lab2_WavePlayer_bsp/
+C:/Software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Lab2_WavePlayer_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Lab2_WavePlayer_bsp//HAL/inc -I../Lab2_WavePlayer_bsp/ -I../Lab2_WavePlayer_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/hello_world.o hello_world.c
+hello_world.c: In function 'main':
+hello_world.c:19:11: error: 'ptr' undeclared (first use in this function)
+   while (*ptr == ' ')
+           ^
+hello_world.c:19:11: note: each undeclared identifier is reported only once for each function it appears in
+hello_world.c:21:3: error: 'res' undeclared (first use in this function)
+   res = f_opendir(&Dir, ptr);
+   ^
+hello_world.c:21:3: warning: implicit declaration of function 'f_opendir' [-Wimplicit-function-declaration]
+hello_world.c:21:20: error: 'Dir' undeclared (first use in this function)
+   res = f_opendir(&Dir, ptr);
+                    ^
+hello_world.c:24:7: warning: implicit declaration of function 'put_rc' [-Wimplicit-function-declaration]
+       put_rc(res);
+       ^
+hello_world.c:26:3: error: 'p1' undeclared (first use in this function)
+   p1 = s1 = s2 = 0; // otherwise initialize the pointers and proceed.
+   ^
+hello_world.c:26:8: error: 's1' undeclared (first use in this function)
+   p1 = s1 = s2 = 0; // otherwise initialize the pointers and proceed.
+        ^
+hello_world.c:26:13: error: 's2' undeclared (first use in this function)
+   p1 = s1 = s2 = 0; // otherwise initialize the pointers and proceed.
+             ^
+hello_world.c:30:7: warning: implicit declaration of function 'f_readdir' [-Wimplicit-function-declaration]
+       res = f_readdir(&Dir, &Finfo);
+       ^
+hello_world.c:30:30: error: 'Finfo' undeclared (first use in this function)
+       res = f_readdir(&Dir, &Finfo);
+                              ^
+hello_world.c:31:19: error: 'FR_OK' undeclared (first use in this function)
+       if ((res != FR_OK) || !Finfo.fname[0])
+                   ^
+hello_world.c:40:27: error: 'AM_DIR' undeclared (first use in this function)
+       if (Finfo.fattrib & AM_DIR)
+                           ^
+hello_world.c:62:7: warning: implicit declaration of function 'xputc' [-Wimplicit-function-declaration]
+       xputc('\n');
+       ^
+hello_world.c:68:19: error: 'song_length' undeclared (first use in this function)
+    printf("%l\n", song_length[i]);
+                   ^
+make: *** [obj/default/hello_world.o] Error 1
+21:55:03 **** Incremental Build of configuration Nios II for project Lab2_WavePlayer ****
+make all 
+Info: Building ../Lab2_WavePlayer_bsp/
+C:/Software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Lab2_WavePlayer_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Lab2_WavePlayer_bsp//HAL/inc -I../Lab2_WavePlayer_bsp/ -I../Lab2_WavePlayer_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/hello_world.o hello_world.c
+hello_world.c: In function 'main':
+hello_world.c:19:11: error: 'ptr' undeclared (first use in this function)
+   while (*ptr == ' ')
+           ^
+hello_world.c:19:11: note: each undeclared identifier is reported only once for each function it appears in
+hello_world.c:21:3: error: 'res' undeclared (first use in this function)
+   res = f_opendir(&Dir, ptr);
+   ^
+hello_world.c:21:3: warning: implicit declaration of function 'f_opendir' [-Wimplicit-function-declaration]
+hello_world.c:21:20: error: 'Dir' undeclared (first use in this function)
+   res = f_opendir(&Dir, ptr);
+                    ^
+hello_world.c:24:7: warning: implicit declaration of function 'put_rc' [-Wimplicit-function-declaration]
+       put_rc(res);
+       ^
+hello_world.c:26:3: error: 'p1' undeclared (first use in this function)
+   p1 = s1 = s2 = 0; // otherwise initialize the pointers and proceed.
+   ^
+hello_world.c:26:8: error: 's1' undeclared (first use in this function)
+   p1 = s1 = s2 = 0; // otherwise initialize the pointers and proceed.
+        ^
+hello_world.c:26:13: error: 's2' undeclared (first use in this function)
+   p1 = s1 = s2 = 0; // otherwise initialize the pointers and proceed.
+             ^
+hello_world.c:30:7: warning: implicit declaration of function 'f_readdir' [-Wimplicit-function-declaration]
+       res = f_readdir(&Dir, &Finfo);
+       ^
+hello_world.c:30:30: error: 'Finfo' undeclared (first use in this function)
+       res = f_readdir(&Dir, &Finfo);
+                              ^
+hello_world.c:31:19: error: 'FR_OK' undeclared (first use in this function)
+       if ((res != FR_OK) || !Finfo.fname[0])
+                   ^
+hello_world.c:40:27: error: 'AM_DIR' undeclared (first use in this function)
+       if (Finfo.fattrib & AM_DIR)
+                           ^
+hello_world.c:62:7: warning: implicit declaration of function 'xputc' [-Wimplicit-function-declaration]
+       xputc('\n');
+       ^
+hello_world.c:68:4: warning: unknown conversion type character 0xa in format [-Wformat=]
+    printf("%l\n", song_size[i]);
+    ^
+hello_world.c:68:4: warning: too many arguments for format [-Wformat-extra-args]
+hello_world.c:68:4: warning: unknown conversion type character 0xa in format [-Wformat=]
+hello_world.c:68:4: warning: too many arguments for format [-Wformat-extra-args]
+make: *** [obj/default/hello_world.o] Error 1
+21:56:36 **** Incremental Build of configuration Nios II for project Lab2_WavePlayer ****
+make all 
+Info: Building ../Lab2_WavePlayer_bsp/
+C:/Software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Lab2_WavePlayer_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Lab2_WavePlayer_bsp//HAL/inc -I../Lab2_WavePlayer_bsp/ -I../Lab2_WavePlayer_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/hello_world.o hello_world.c
+hello_world.c:6:1: error: unknown type name 'DIR'
+ DIR Dir;
+ ^
+hello_world.c: In function 'main':
+hello_world.c:24:3: error: 'res' undeclared (first use in this function)
+   res = f_opendir(&Dir, ptr);
+   ^
+hello_world.c:24:3: note: each undeclared identifier is reported only once for each function it appears in
+hello_world.c:24:3: warning: implicit declaration of function 'f_opendir' [-Wimplicit-function-declaration]
+hello_world.c:27:7: warning: implicit declaration of function 'put_rc' [-Wimplicit-function-declaration]
+       put_rc(res);
+       ^
+hello_world.c:33:7: warning: implicit declaration of function 'f_readdir' [-Wimplicit-function-declaration]
+       res = f_readdir(&Dir, &Finfo);
+       ^
+hello_world.c:33:30: error: 'Finfo' undeclared (first use in this function)
+       res = f_readdir(&Dir, &Finfo);
+                              ^
+hello_world.c:34:19: error: 'FR_OK' undeclared (first use in this function)
+       if ((res != FR_OK) || !Finfo.fname[0])
+                   ^
+hello_world.c:43:27: error: 'AM_DIR' undeclared (first use in this function)
+       if (Finfo.fattrib & AM_DIR)
+                           ^
+hello_world.c:65:7: warning: implicit declaration of function 'xputc' [-Wimplicit-function-declaration]
+       xputc('\n');
+       ^
+hello_world.c:71:4: warning: unknown conversion type character 0xa in format [-Wformat=]
+    printf("%l\n", song_size[i]);
+    ^
+hello_world.c:71:4: warning: too many arguments for format [-Wformat-extra-args]
+hello_world.c:71:4: warning: unknown conversion type character 0xa in format [-Wformat=]
+hello_world.c:71:4: warning: too many arguments for format [-Wformat-extra-args]
+make: *** [obj/default/hello_world.o] Error 1
+21:56:51 **** Incremental Build of configuration Nios II for project Lab2_WavePlayer ****
+make all 
+Info: Building ../Lab2_WavePlayer_bsp/
+C:/Software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Lab2_WavePlayer_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Lab2_WavePlayer_bsp//HAL/inc -I../Lab2_WavePlayer_bsp/ -I../Lab2_WavePlayer_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/hello_world.o hello_world.c
+hello_world.c: In function 'main':
+hello_world.c:37:3: error: 'res' undeclared (first use in this function)
+   res = f_opendir(&Dir, ptr);
+   ^
+hello_world.c:37:3: note: each undeclared identifier is reported only once for each function it appears in
+hello_world.c:40:7: warning: implicit declaration of function 'put_rc' [-Wimplicit-function-declaration]
+       put_rc(res);
+       ^
+hello_world.c:46:30: error: 'Finfo' undeclared (first use in this function)
+       res = f_readdir(&Dir, &Finfo);
+                              ^
+hello_world.c:84:4: warning: unknown conversion type character 0xa in format [-Wformat=]
+    printf("%l\n", song_size[i]);
+    ^
+hello_world.c:84:4: warning: too many arguments for format [-Wformat-extra-args]
+hello_world.c:84:4: warning: unknown conversion type character 0xa in format [-Wformat=]
+hello_world.c:84:4: warning: too many arguments for format [-Wformat-extra-args]
+make: *** [obj/default/hello_world.o] Error 1
+21:57:05 **** Incremental Build of configuration Nios II for project Lab2_WavePlayer ****
+make all 
+Info: Building ../Lab2_WavePlayer_bsp/
+C:/Software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Lab2_WavePlayer_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Lab2_WavePlayer_bsp//HAL/inc -I../Lab2_WavePlayer_bsp/ -I../Lab2_WavePlayer_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/hello_world.o hello_world.c
+hello_world.c: In function 'main':
+hello_world.c:41:7: warning: implicit declaration of function 'put_rc' [-Wimplicit-function-declaration]
+       put_rc(res);
+       ^
+hello_world.c:47:30: error: 'Finfo' undeclared (first use in this function)
+       res = f_readdir(&Dir, &Finfo);
+                              ^
+hello_world.c:47:30: note: each undeclared identifier is reported only once for each function it appears in
+hello_world.c:85:4: warning: unknown conversion type character 0xa in format [-Wformat=]
+    printf("%l\n", song_size[i]);
+    ^
+hello_world.c:85:4: warning: too many arguments for format [-Wformat-extra-args]
+hello_world.c:85:4: warning: unknown conversion type character 0xa in format [-Wformat=]
+hello_world.c:85:4: warning: too many arguments for format [-Wformat-extra-args]
+make: *** [obj/default/hello_world.o] Error 1
+21:57:18 **** Incremental Build of configuration Nios II for project Lab2_WavePlayer ****
+make all 
+Info: Building ../Lab2_WavePlayer_bsp/
+C:/Software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Lab2_WavePlayer_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Lab2_WavePlayer_bsp//HAL/inc -I../Lab2_WavePlayer_bsp/ -I../Lab2_WavePlayer_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/hello_world.o hello_world.c
+hello_world.c: In function 'main':
+hello_world.c:41:7: warning: implicit declaration of function 'put_rc' [-Wimplicit-function-declaration]
+       put_rc(res);
+       ^
+hello_world.c:47:30: error: 'Finfo' undeclared (first use in this function)
+       res = f_readdir(&Dir, &Finfo);
+                              ^
+hello_world.c:47:30: note: each undeclared identifier is reported only once for each function it appears in
+hello_world.c:85:4: warning: unknown conversion type character 0xa in format [-Wformat=]
+    printf("%l\n", song_size[i]);
+    ^
+hello_world.c:85:4: warning: too many arguments for format [-Wformat-extra-args]
+hello_world.c:85:4: warning: unknown conversion type character 0xa in format [-Wformat=]
+hello_world.c:85:4: warning: too many arguments for format [-Wformat-extra-args]
+make: *** [obj/default/hello_world.o] Error 1
+21:57:55 **** Incremental Build of configuration Nios II for project Lab2_WavePlayer ****
+make all 
+Info: Building ../Lab2_WavePlayer_bsp/
+C:/Software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Lab2_WavePlayer_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Lab2_WavePlayer_bsp//HAL/inc -I../Lab2_WavePlayer_bsp/ -I../Lab2_WavePlayer_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/hello_world.o hello_world.c
+hello_world.c: In function 'main':
+hello_world.c:42:7: warning: implicit declaration of function 'put_rc' [-Wimplicit-function-declaration]
+       put_rc(res);
+       ^
+hello_world.c:86:4: warning: unknown conversion type character 0xa in format [-Wformat=]
+    printf("%l\n", song_size[i]);
+    ^
+hello_world.c:86:4: warning: too many arguments for format [-Wformat-extra-args]
+hello_world.c:86:4: warning: unknown conversion type character 0xa in format [-Wformat=]
+hello_world.c:86:4: warning: too many arguments for format [-Wformat-extra-args]
+Info: Linking Lab2_WavePlayer.elf
+nios2-elf-g++  -T'../Lab2_WavePlayer_bsp//linker.x' -msys-crt0='../Lab2_WavePlayer_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../Lab2_WavePlayer_bsp/   -Wl,-Map=Lab2_WavePlayer.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o Lab2_WavePlayer.elf obj/default/fatfs.o obj/default/fatfs_diskio.o obj/default/fatfs_nios2_de0_nano_spi.o obj/default/fatfs_nios2_de1_pio.o obj/default/fatfs_nios2_de1_spi.o obj/default/ff.o obj/default/hello_world.o obj/default/monitor.o obj/default/uart_nios2.o -lm -msys-lib=m
+obj/default/hello_world.o: In function `main':
+C:\Users\s23mukhe\ECE-224\LogicalStep\software\Lab2_WavePlayer/hello_world.c:42: undefined reference to `put_rc'
+collect2.exe: error: ld returned 1 exit status
+make: *** [Lab2_WavePlayer.elf] Error 1
+21:58:50 **** Incremental Build of configuration Nios II for project Lab2_WavePlayer ****
+make all 
+Info: Building ../Lab2_WavePlayer_bsp/
+C:/Software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Lab2_WavePlayer_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Lab2_WavePlayer_bsp//HAL/inc -I../Lab2_WavePlayer_bsp/ -I../Lab2_WavePlayer_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/hello_world.o hello_world.c
+hello_world.c: In function 'main':
+hello_world.c:101:4: warning: unknown conversion type character 0xa in format [-Wformat=]
+    printf("%l\n", song_size[i]);
+    ^
+hello_world.c:101:4: warning: too many arguments for format [-Wformat-extra-args]
+hello_world.c:101:4: warning: unknown conversion type character 0xa in format [-Wformat=]
+hello_world.c:101:4: warning: too many arguments for format [-Wformat-extra-args]
+Info: Linking Lab2_WavePlayer.elf
+nios2-elf-g++  -T'../Lab2_WavePlayer_bsp//linker.x' -msys-crt0='../Lab2_WavePlayer_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../Lab2_WavePlayer_bsp/   -Wl,-Map=Lab2_WavePlayer.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o Lab2_WavePlayer.elf obj/default/fatfs.o obj/default/fatfs_diskio.o obj/default/fatfs_nios2_de0_nano_spi.o obj/default/fatfs_nios2_de1_pio.o obj/default/fatfs_nios2_de1_spi.o obj/default/ff.o obj/default/hello_world.o obj/default/monitor.o obj/default/uart_nios2.o -lm -msys-lib=m
+nios2-elf-insert Lab2_WavePlayer.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x1001140 --timestamp 1569875873 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name QD1 --quartus_project_dir "C:/Users/s23mukhe/ECE-224/LogicalStep" --jdi ../..//output_files/LogicalStep_top.jdi --sopcinfo C:/Users/s23mukhe/ECE-224/LogicalStep/software/Lab2_WavePlayer_bsp/../../QD1.sopcinfo
+Info: (Lab2_WavePlayer.elf) 106 KBytes program size (code + initialized data).
+Info:                       8082 KBytes free for stack + heap.
+Info: Creating Lab2_WavePlayer.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source Lab2_WavePlayer.elf >Lab2_WavePlayer.objdump
+[Lab2_WavePlayer build complete]
+22:01:07 **** Incremental Build of configuration Nios II for project Lab2_WavePlayer ****
+make all 
+Info: Building ../Lab2_WavePlayer_bsp/
+C:/Software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Lab2_WavePlayer_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Lab2_WavePlayer_bsp//HAL/inc -I../Lab2_WavePlayer_bsp/ -I../Lab2_WavePlayer_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/hello_world.o hello_world.c
+hello_world.c: In function 'main':
+hello_world.c:53:31: error: 'Fatfs' undeclared (first use in this function)
+ put_rc(f_mount((uint8_t) p1, &Fatfs[p1]));
+                               ^
+hello_world.c:53:31: note: each undeclared identifier is reported only once for each function it appears in
+hello_world.c:103:4: warning: unknown conversion type character 0xa in format [-Wformat=]
+    printf("%l\n", song_size[i]);
+    ^
+hello_world.c:103:4: warning: too many arguments for format [-Wformat-extra-args]
+hello_world.c:103:4: warning: unknown conversion type character 0xa in format [-Wformat=]
+hello_world.c:103:4: warning: too many arguments for format [-Wformat-extra-args]
+make: *** [obj/default/hello_world.o] Error 1
+22:02:30 **** Incremental Build of configuration Nios II for project Lab2_WavePlayer ****
+make all 
+Info: Building ../Lab2_WavePlayer_bsp/
+C:/Software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Lab2_WavePlayer_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Lab2_WavePlayer_bsp//HAL/inc -I../Lab2_WavePlayer_bsp/ -I../Lab2_WavePlayer_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/hello_world.o hello_world.c
+hello_world.c: In function 'main':
+hello_world.c:104:4: warning: unknown conversion type character 0xa in format [-Wformat=]
+    printf("%l\n", song_size[i]);
+    ^
+hello_world.c:104:4: warning: too many arguments for format [-Wformat-extra-args]
+hello_world.c:104:4: warning: unknown conversion type character 0xa in format [-Wformat=]
+hello_world.c:104:4: warning: too many arguments for format [-Wformat-extra-args]
+Info: Linking Lab2_WavePlayer.elf
+nios2-elf-g++  -T'../Lab2_WavePlayer_bsp//linker.x' -msys-crt0='../Lab2_WavePlayer_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../Lab2_WavePlayer_bsp/   -Wl,-Map=Lab2_WavePlayer.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o Lab2_WavePlayer.elf obj/default/fatfs.o obj/default/fatfs_diskio.o obj/default/fatfs_nios2_de0_nano_spi.o obj/default/fatfs_nios2_de1_pio.o obj/default/fatfs_nios2_de1_spi.o obj/default/ff.o obj/default/hello_world.o obj/default/monitor.o obj/default/uart_nios2.o -lm -msys-lib=m
+nios2-elf-insert Lab2_WavePlayer.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x1001140 --timestamp 1569875873 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name QD1 --quartus_project_dir "C:/Users/s23mukhe/ECE-224/LogicalStep" --jdi ../..//output_files/LogicalStep_top.jdi --sopcinfo C:/Users/s23mukhe/ECE-224/LogicalStep/software/Lab2_WavePlayer_bsp/../../QD1.sopcinfo
+Info: (Lab2_WavePlayer.elf) 107 KBytes program size (code + initialized data).
+Info:                       8081 KBytes free for stack + heap.
+Info: Creating Lab2_WavePlayer.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source Lab2_WavePlayer.elf >Lab2_WavePlayer.objdump
+[Lab2_WavePlayer build complete]

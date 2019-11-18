@@ -1,28 +1,9 @@
-20:58:13 **** Incremental Build of configuration Nios II for project Lab2_CLI_Testing ****
+18:23:31 **** Incremental Build of configuration Nios II for project Lab2_CLI_Testing ****
 make all 
 Info: Building ../Lab2_CLI_Testing_bsp/
 C:/Software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Lab2_CLI_Testing_bsp/
 [BSP build complete]
-Info: Compiling hello_world.c to obj/default/hello_world.o
-nios2-elf-gcc -xc -MP -MMD -c -I../Lab2_CLI_Testing_bsp//HAL/inc -I../Lab2_CLI_Testing_bsp/ -I../Lab2_CLI_Testing_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/hello_world.o hello_world.c
-hello_world.c: In function 'main':
-hello_world.c:225:5: warning: implicit declaration of function 'alt_printf' [-Wimplicit-function-declaration]
-     alt_printf ("Error: could not open audio device \n");
-     ^
-hello_world.c:209:17: warning: unused variable 'ptr2' [-Wunused-variable]
-     char *ptr, *ptr2;
-                 ^
-hello_world.c:208:6: warning: unused variable 'fifospace' [-Wunused-variable]
-  int fifospace;
-      ^
-Info: Linking Lab2_CLI_Testing.elf
-nios2-elf-g++  -T'../Lab2_CLI_Testing_bsp//linker.x' -msys-crt0='../Lab2_CLI_Testing_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../Lab2_CLI_Testing_bsp/   -Wl,-Map=Lab2_CLI_Testing.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o Lab2_CLI_Testing.elf obj/default/fatfs.o obj/default/fatfs_diskio.o obj/default/fatfs_nios2_de0_nano_spi.o obj/default/fatfs_nios2_de1_pio.o obj/default/fatfs_nios2_de1_spi.o obj/default/ff.o obj/default/hello_world.o obj/default/monitor.o obj/default/uart_nios2.o -lm -msys-lib=m
-nios2-elf-insert Lab2_CLI_Testing.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x1001140 --timestamp 1569875873 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name QD1 --quartus_project_dir "C:/Users/s23mukhe/ECE-224/LogicalStep" --jdi ../..//output_files/LogicalStep_top.jdi --sopcinfo C:/Users/s23mukhe/ECE-224/LogicalStep/software/Lab2_CLI_Testing_bsp/../../QD1.sopcinfo
-Info: (Lab2_CLI_Testing.elf) 75 KBytes program size (code + initialized data).
-Info:                        8113 KBytes free for stack + heap.
-Info: Creating Lab2_CLI_Testing.objdump
-nios2-elf-objdump --disassemble --syms --all-header --source Lab2_CLI_Testing.elf >Lab2_CLI_Testing.objdump
 [Lab2_CLI_Testing build complete]
 
-20:58:15 Build Finished (took 2s.4ms)
+18:23:33 Build Finished (took 1s.906ms)
 

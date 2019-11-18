@@ -1,0 +1,95 @@
+#include <stdio.h>
+#include "alt_types.h"
+#include "altera_avalon_timer.h"
+#include "altera_avalon_timer_regs.h"
+
+unsigned char buttons;
+int firstpress;
+int leds;
+
+// ISRs
+void button_ISR(void* context, alt_u32 id){
+	//printf("in pb interrupt\n");
+	// Disable pb ISR, enable TIMER
+	// Timer ISR should be enabled by default
+	// Disable PB Interrupts
+	IOWR(BUTTON_PIO_BASE, 2, 0x0);
+
+   // Clear Timer IRQ (set status to 0- both RUN and TO)
+	// RUN == 1 when counter is running, TO == 1 when counter is 0, must be rest explicitly
+	IOWR(TIMER_0_BASE, 0x0, 0x0);
+	/** The timer is in MHz, and we want to wait for 30ms,
+	 * According to Piazza, 1 Altera clock cycle is 20 ns. Hence, to get a delay of 30 ms, we need 1,500,000 clock cycles = 0x 0016E360)	 */
+	// Set the lower 16 bits of the period
+	IOWR(TIMER_0_BASE, 0x02, 0xE360);
+   // Set the higher 16 bits of the period
+   IOWR(TIMER_0_BASE, 0x03, 0x0016);
+	// Enable Timer
+   /** offset 0x01 for control register-  third bit 1 (START) - starts the internal counter
+    * first bit 1 (ITO) - to generate interrupts when the status register's TO bit is 1 */
+   IOWR(TIMER_0_BASE, 0x01, 0x05);
+
+	//Disable button ISR
+	IOWR(BUTTON_PIO_BASE, 3, 0x0);
+}
+
+void timer_ISR(void* context, alt_u32 id){
+	//printf("in timer_0 interrupt\n");
+	IOWR(LED_PIO_BASE, 0, 0x01);
+
+	// When the timer is triggered, read the pushbuttons
+	buttons = 0x0F & IORD(BUTTON_PIO_BASE, 0);
+
+	if(firstpress){
+		firstpress = 0;
+		if((buttons & 0x0F) == 0x0F){
+			printf("False positive\n");
+		} else if((buttons & 0x0E) == 0x0E){
+			printf("pb0 pressed\n");
+		} else if((buttons & 0x0D) == 0x0D){
+			printf("pb1 pressed\n");
+		} else if((buttons & 0x0B) == 0x0B){
+			printf("pb2 pressed\n");
+		} else if((buttons & 0x07) == 0x07){
+			printf("pb3 pressed\n");
+		}
+	}else
+	{
+		//If firstpress is false, we are on the upstroke of the button and need to validate all buttons are high
+		if((buttons & 0x0F) == 0x0F){
+			//printf("Upstroke detected, action confirmed\n");
+		}
+		firstpress = 1;
+	}
+
+	// Set all control registers to 0 and status to 0
+	IOWR_ALTERA_AVALON_TIMER_CONTROL(TIMER_0_BASE, 0x0);
+	IOWR_ALTERA_AVALON_TIMER_STATUS(TIMER_0_BASE, 0x0);
+
+	IOWR(LED_PIO_BASE, 0, 0x0);
+	// re-enable Pushbutton ISR and clear edge-capture register
+	IOWR(BUTTON_PIO_BASE, 3, 0x0);
+	IOWR(BUTTON_PIO_BASE, 2, 0xF);
+}
+
+
+int main()
+{
+	printf("\n\nMain\n");
+	firstpress = 1;
+
+	 // Register the ISR for timer event
+	alt_irq_register( TIMER_0_IRQ, NULL, timer_0_ISR);
+
+	//Register button interrupt
+	IOWR(BUTTON_PIO_BASE, 2, 0x0);
+	IOWR(BUTTON_PIO_BASE, 3, 0x0);
+	alt_irq_register( BUTTON_PIO_IRQ, (void *)0, button_ISR);
+	IOWR(BUTTON_PIO_BASE, 2, 0xF);
+
+
+   while(1){
+
+   }
+  return 0;
+}

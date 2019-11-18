@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+int isWav(char *filename) {
+	// split at last occurrence
+	char *dot = strrchr(filename, ".");
+	if (dot != NULL) {
+		printf("%d\n", !strncmp(".WAV", dot, 4));
+		return !strncmp(".WAV", dot, 4);
+	}
+	return 0;
+
+}
+int main()
+{
+  printf("Hello from Nios II!\n");
+  int res = isWav("foo.o");
+  printf("is %d\n", res);
+  return 0;
+}
